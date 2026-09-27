@@ -1,0 +1,1117 @@
+Processing '/tmp/apk_inspect/classes8.dex'...
+Opened '/tmp/apk_inspect/classes8.dex', DEX version '037'
+Class #0            -
+  Class descriptor  : 'Lcom/example/data/api/RuijieApiClient$$ExternalSyntheticLambda0;'
+  Access flags      : 0x1011 (PUBLIC FINAL SYNTHETIC)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+    #0              : 'Lokhttp3/Interceptor;'
+  Static fields     -
+  Instance fields   -
+    #0              : (in Lcom/example/data/api/RuijieApiClient$$ExternalSyntheticLambda0;)
+      name          : 'f$0'
+      type          : 'Lcom/example/data/api/RuijieApiClient;'
+      access        : 0x1011 (PUBLIC FINAL SYNTHETIC)
+  Direct methods    -
+    #0              : (in Lcom/example/data/api/RuijieApiClient$$ExternalSyntheticLambda0;)
+      name          : '<init>'
+      type          : '(Lcom/example/data/api/RuijieApiClient;)V'
+      access        : 0x11001 (PUBLIC SYNTHETIC CONSTRUCTOR)
+      code          -
+      registers     : 2
+      ins           : 2
+      outs          : 1
+      insns size    : 6 16-bit code units
+000b50:                                        |[000b50] com.example.data.api.RuijieApiClient$$ExternalSyntheticLambda0.<init>:(Lcom/example/data/api/RuijieApiClient;)V
+000b60: 7010 3100 0000                         |0000: invoke-direct {v0}, Ljava/lang/Object;.<init>:()V // method@0031
+000b66: 5b01 0000                              |0003: iput-object v1, v0, Lcom/example/data/api/RuijieApiClient$$ExternalSyntheticLambda0;.f$0:Lcom/example/data/api/RuijieApiClient; // field@0000
+000b6a: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=0
+      locals        :
+        0x0000 - 0x0006 reg=0 this Lcom/example/data/api/RuijieApiClient$$ExternalSyntheticLambda0;
+        0x0000 - 0x0006 reg=1 (null) Lcom/example/data/api/RuijieApiClient;
+
+  Virtual methods   -
+    #0              : (in Lcom/example/data/api/RuijieApiClient$$ExternalSyntheticLambda0;)
+      name          : 'intercept'
+      type          : '(Lokhttp3/Interceptor$Chain;)Lokhttp3/Response;'
+      access        : 0x0011 (PUBLIC FINAL)
+      code          -
+      registers     : 3
+      ins           : 2
+      outs          : 2
+      insns size    : 7 16-bit code units
+000b30:                                        |[000b30] com.example.data.api.RuijieApiClient$$ExternalSyntheticLambda0.intercept:(Lokhttp3/Interceptor$Chain;)Lokhttp3/Response;
+000b40: 5410 0000                              |0000: iget-object v0, v1, Lcom/example/data/api/RuijieApiClient$$ExternalSyntheticLambda0;.f$0:Lcom/example/data/api/RuijieApiClient; // field@0000
+000b44: 7120 0400 2000                         |0002: invoke-static {v0, v2}, Lcom/example/data/api/RuijieApiClient;.authInterceptor$lambda$0:(Lcom/example/data/api/RuijieApiClient;Lokhttp3/Interceptor$Chain;)Lokhttp3/Response; // method@0004
+000b4a: 0c02                                   |0005: move-result-object v2
+000b4c: 1102                                   |0006: return-object v2
+      catches       : (none)
+      positions     :
+        0x0000 line=0
+      locals        :
+        0x0000 - 0x0007 reg=1 this Lcom/example/data/api/RuijieApiClient$$ExternalSyntheticLambda0;
+        0x0000 - 0x0007 reg=2 (null) Lokhttp3/Interceptor$Chain;
+
+  source_file_idx   : 36 (D8$$SyntheticClass)
+
+Class #1            -
+  Class descriptor  : 'Lcom/example/data/api/RuijieApiClient;'
+  Access flags      : 0x0011 (PUBLIC FINAL)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+    #0              : (in Lcom/example/data/api/RuijieApiClient;)
+      name          : '$stable'
+      type          : 'I'
+      access        : 0x0019 (PUBLIC STATIC FINAL)
+  Instance fields   -
+    #0              : (in Lcom/example/data/api/RuijieApiClient;)
+      name          : 'accountManager'
+      type          : 'Lcom/example/data/session/AccountManager;'
+      access        : 0x0012 (PRIVATE FINAL)
+    #1              : (in Lcom/example/data/api/RuijieApiClient;)
+      name          : 'authInterceptor'
+      type          : 'Lokhttp3/Interceptor;'
+      access        : 0x0012 (PRIVATE FINAL)
+    #2              : (in Lcom/example/data/api/RuijieApiClient;)
+      name          : 'moshi'
+      type          : 'Lcom/squareup/moshi/Moshi;'
+      access        : 0x0012 (PRIVATE FINAL)
+    #3              : (in Lcom/example/data/api/RuijieApiClient;)
+      name          : 'okHttpClient'
+      type          : 'Lokhttp3/OkHttpClient;'
+      access        : 0x0012 (PRIVATE FINAL)
+    #4              : (in Lcom/example/data/api/RuijieApiClient;)
+      name          : 'serviceCache'
+      type          : 'Ljava/util/concurrent/ConcurrentHashMap;'
+      access        : 0x0012 (PRIVATE FINAL)
+  Direct methods    -
+    #0              : (in Lcom/example/data/api/RuijieApiClient;)
+      name          : '<clinit>'
+      type          : '()V'
+      access        : 0x10008 (STATIC CONSTRUCTOR)
+      code          -
+      registers     : 1
+      ins           : 0
+      outs          : 0
+      insns size    : 5 16-bit code units
+000e04:                                        |[000e04] com.example.data.api.RuijieApiClient.<clinit>:()V
+000e14: 1300 0800                              |0000: const/16 v0, #int 8 // #8
+000e18: 6700 0100                              |0002: sput v0, Lcom/example/data/api/RuijieApiClient;.$stable:I // field@0001
+000e1c: 0e00                                   |0004: return-void
+      catches       : (none)
+      positions     :
+      locals        :
+
+    #1              : (in Lcom/example/data/api/RuijieApiClient;)
+      name          : '<init>'
+      type          : '(Lcom/example/data/session/AccountManager;)V'
+      access        : 0x10001 (PUBLIC CONSTRUCTOR)
+      code          -
+      registers     : 6
+      ins           : 2
+      outs          : 4
+      insns size    : 93 16-bit code units
+000e20:                                        |[000e20] com.example.data.api.RuijieApiClient.<init>:(Lcom/example/data/session/AccountManager;)V
+000e30: 1a00 8500                              |0000: const-string v0, "accountManager" // string@0085
+000e34: 7120 3b00 0500                         |0002: invoke-static {v5, v0}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@003b
+000e3a: 7010 3100 0400                         |0005: invoke-direct {v4}, Ljava/lang/Object;.<init>:()V // method@0031
+000e40: 5b45 0200                              |0008: iput-object v5, v4, Lcom/example/data/api/RuijieApiClient;.accountManager:Lcom/example/data/session/AccountManager; // field@0002
+000e44: 0000                                   |000a: nop // spacer
+000e46: 2200 0a00                              |000b: new-instance v0, Lcom/squareup/moshi/Moshi$Builder; // type@000a
+000e4a: 7010 2d00 0000                         |000d: invoke-direct {v0}, Lcom/squareup/moshi/Moshi$Builder;.<init>:()V // method@002d
+000e50: 2201 0c00                              |0010: new-instance v1, Lcom/squareup/moshi/kotlin/reflect/KotlinJsonAdapterFactory; // type@000c
+000e54: 7010 3000 0100                         |0012: invoke-direct {v1}, Lcom/squareup/moshi/kotlin/reflect/KotlinJsonAdapterFactory;.<init>:()V // method@0030
+000e5a: 1f01 0900                              |0015: check-cast v1, Lcom/squareup/moshi/JsonAdapter$Factory; // type@0009
+000e5e: 6e20 2e00 1000                         |0017: invoke-virtual {v0, v1}, Lcom/squareup/moshi/Moshi$Builder;.addLast:(Lcom/squareup/moshi/JsonAdapter$Factory;)Lcom/squareup/moshi/Moshi$Builder; // method@002e
+000e64: 0c00                                   |001a: move-result-object v0
+000e66: 6e10 2f00 0000                         |001b: invoke-virtual {v0}, Lcom/squareup/moshi/Moshi$Builder;.build:()Lcom/squareup/moshi/Moshi; // method@002f
+000e6c: 0c00                                   |001e: move-result-object v0
+000e6e: 1a01 9700                              |001f: const-string v1, "build(...)" // string@0097
+000e72: 7120 3a00 1000                         |0021: invoke-static {v0, v1}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V // method@003a
+000e78: 5b40 0400                              |0024: iput-object v0, v4, Lcom/example/data/api/RuijieApiClient;.moshi:Lcom/squareup/moshi/Moshi; // field@0004
+000e7c: 2200 1800                              |0026: new-instance v0, Ljava/util/concurrent/ConcurrentHashMap; // type@0018
+000e80: 7010 3600 0000                         |0028: invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;.<init>:()V // method@0036
+000e86: 5b40 0600                              |002b: iput-object v0, v4, Lcom/example/data/api/RuijieApiClient;.serviceCache:Ljava/util/concurrent/ConcurrentHashMap; // field@0006
+000e8a: 2200 0200                              |002d: new-instance v0, Lcom/example/data/api/RuijieApiClient$$ExternalSyntheticLambda0; // type@0002
+000e8e: 7020 0000 4000                         |002f: invoke-direct {v0, v4}, Lcom/example/data/api/RuijieApiClient$$ExternalSyntheticLambda0;.<init>:(Lcom/example/data/api/RuijieApiClient;)V // method@0000
+000e94: 5b40 0300                              |0032: iput-object v0, v4, Lcom/example/data/api/RuijieApiClient;.authInterceptor:Lokhttp3/Interceptor; // field@0003
+000e98: 0000                                   |0034: nop // spacer
+000e9a: 2200 2200                              |0035: new-instance v0, Lokhttp3/OkHttpClient$Builder; // type@0022
+000e9e: 7010 4200 0000                         |0037: invoke-direct {v0}, Lokhttp3/OkHttpClient$Builder;.<init>:()V // method@0042
+000ea4: 1601 1900                              |003a: const-wide/16 v1, #int 25 // #19
+000ea8: 6203 0700                              |003c: sget-object v3, Ljava/util/concurrent/TimeUnit;.SECONDS:Ljava/util/concurrent/TimeUnit; // field@0007
+000eac: 6e40 4500 1032                         |003e: invoke-virtual {v0, v1, v2, v3}, Lokhttp3/OkHttpClient$Builder;.connectTimeout:(JLjava/util/concurrent/TimeUnit;)Lokhttp3/OkHttpClient$Builder; // method@0045
+000eb2: 0c00                                   |0041: move-result-object v0
+000eb4: 6201 0700                              |0042: sget-object v1, Ljava/util/concurrent/TimeUnit;.SECONDS:Ljava/util/concurrent/TimeUnit; // field@0007
+000eb8: 1602 2d00                              |0044: const-wide/16 v2, #int 45 // #2d
+000ebc: 6e40 4600 2013                         |0046: invoke-virtual {v0, v2, v3, v1}, Lokhttp3/OkHttpClient$Builder;.readTimeout:(JLjava/util/concurrent/TimeUnit;)Lokhttp3/OkHttpClient$Builder; // method@0046
+000ec2: 0c00                                   |0049: move-result-object v0
+000ec4: 6201 0700                              |004a: sget-object v1, Ljava/util/concurrent/TimeUnit;.SECONDS:Ljava/util/concurrent/TimeUnit; // field@0007
+000ec8: 6e40 4700 2013                         |004c: invoke-virtual {v0, v2, v3, v1}, Lokhttp3/OkHttpClient$Builder;.writeTimeout:(JLjava/util/concurrent/TimeUnit;)Lokhttp3/OkHttpClient$Builder; // method@0047
+000ece: 0c00                                   |004f: move-result-object v0
+000ed0: 5441 0300                              |0050: iget-object v1, v4, Lcom/example/data/api/RuijieApiClient;.authInterceptor:Lokhttp3/Interceptor; // field@0003
+000ed4: 6e20 4300 1000                         |0052: invoke-virtual {v0, v1}, Lokhttp3/OkHttpClient$Builder;.addInterceptor:(Lokhttp3/Interceptor;)Lokhttp3/OkHttpClient$Builder; // method@0043
+000eda: 0c00                                   |0055: move-result-object v0
+000edc: 6e10 4400 0000                         |0056: invoke-virtual {v0}, Lokhttp3/OkHttpClient$Builder;.build:()Lokhttp3/OkHttpClient; // method@0044
+000ee2: 0c00                                   |0059: move-result-object v0
+000ee4: 5b40 0500                              |005a: iput-object v0, v4, Lcom/example/data/api/RuijieApiClient;.okHttpClient:Lokhttp3/OkHttpClient; // field@0005
+000ee8: 0e00                                   |005c: return-void
+      catches       : (none)
+      positions     :
+        0x0005 line=14
+        0x000a line=18
+        0x000b line=16
+        0x0010 line=17
+        0x001b line=18
+        0x0026 line=20
+        0x002d line=22
+        0x0034 line=43
+        0x0035 line=38
+        0x003a line=39
+        0x0042 line=40
+        0x004a line=41
+        0x0050 line=42
+        0x0056 line=43
+        0x005c line=14
+      locals        :
+        0x0000 - 0x005d reg=4 this Lcom/example/data/api/RuijieApiClient;
+        0x0000 - 0x005d reg=5 accountManager Lcom/example/data/session/AccountManager;
+
+    #2              : (in Lcom/example/data/api/RuijieApiClient;)
+      name          : 'authInterceptor$lambda$0'
+      type          : '(Lcom/example/data/api/RuijieApiClient;Lokhttp3/Interceptor$Chain;)Lokhttp3/Response;'
+      access        : 0x0018 (STATIC FINAL)
+      code          -
+      registers     : 11
+      ins           : 2
+      outs          : 5
+      insns size    : 155 16-bit code units
+000cbc:                                        |[000cbc] com.example.data.api.RuijieApiClient.authInterceptor$lambda$0:(Lcom/example/data/api/RuijieApiClient;Lokhttp3/Interceptor$Chain;)Lokhttp3/Response;
+000ccc: 1a00 9800                              |0000: const-string v0, "chain" // string@0098
+000cd0: 7120 3b00 0a00                         |0002: invoke-static {v10, v0}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullParameter:(Ljava/lang/Object;Ljava/lang/String;)V // method@003b
+000cd6: 7210 4100 0a00                         |0005: invoke-interface {v10}, Lokhttp3/Interceptor$Chain;.request:()Lokhttp3/Request; // method@0041
+000cdc: 0c00                                   |0008: move-result-object v0
+000cde: 5491 0200                              |0009: iget-object v1, v9, Lcom/example/data/api/RuijieApiClient;.accountManager:Lcom/example/data/session/AccountManager; // field@0002
+000ce2: 6e10 2c00 0100                         |000b: invoke-virtual {v1}, Lcom/example/data/session/AccountManager;.getActiveAccount:()Lcom/example/data/model/RuijieAccount; // method@002c
+000ce8: 0c01                                   |000e: move-result-object v1
+000cea: 6e10 4b00 0000                         |000f: invoke-virtual {v0}, Lokhttp3/Request;.newBuilder:()Lokhttp3/Request$Builder; // method@004b
+000cf0: 0c02                                   |0012: move-result-object v2
+000cf2: 1a03 1f00                              |0013: const-string v3, "Accept" // string@001f
+000cf6: 1a04 8c00                              |0015: const-string v4, "application/json" // string@008c
+000cfa: 6e30 4900 3204                         |0017: invoke-virtual {v2, v3, v4}, Lokhttp3/Request$Builder;.header:(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Request$Builder; // method@0049
+000d00: 0c02                                   |001a: move-result-object v2
+000d02: 1a03 2300                              |001b: const-string v3, "Content-Type" // string@0023
+000d06: 6e30 4900 3204                         |001d: invoke-virtual {v2, v3, v4}, Lokhttp3/Request$Builder;.header:(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Request$Builder; // method@0049
+000d0c: 0c02                                   |0020: move-result-object v2
+000d0e: 0000                                   |0021: nop // spacer
+000d10: 6e10 4c00 0000                         |0022: invoke-virtual {v0}, Lokhttp3/Request;.url:()Lokhttp3/HttpUrl; // method@004c
+000d16: 0c03                                   |0025: move-result-object v3
+000d18: 6e10 3f00 0300                         |0026: invoke-virtual {v3}, Lokhttp3/HttpUrl;.encodedPath:()Ljava/lang/String; // method@003f
+000d1e: 0c03                                   |0029: move-result-object v3
+000d20: 0734                                   |002a: move-object v4, v3
+000d22: 1f04 1200                              |002b: check-cast v4, Ljava/lang/CharSequence; // type@0012
+000d26: 1a05 d900                              |002d: const-string v5, "oauth20" // string@00d9
+000d2a: 1f05 1200                              |002f: check-cast v5, Ljava/lang/CharSequence; // type@0012
+000d2e: 1206                                   |0031: const/4 v6, #int 0 // #0
+000d30: 1227                                   |0032: const/4 v7, #int 2 // #2
+000d32: 1208                                   |0033: const/4 v8, #int 0 // #0
+000d34: 7158 3c00 5476                         |0034: invoke-static {v4, v5, v6, v7, v8}, Lkotlin/text/StringsKt;.contains$default:(Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZILjava/lang/Object;)Z // method@003c
+000d3a: 0a04                                   |0037: move-result v4
+000d3c: 3904 2900                              |0038: if-nez v4, 0061 // +0029
+000d40: 0734                                   |003a: move-object v4, v3
+000d42: 1f04 1200                              |003b: check-cast v4, Ljava/lang/CharSequence; // type@0012
+000d46: 1a05 8d00                              |003d: const-string v5, "auth/login" // string@008d
+000d4a: 1f05 1200                              |003f: check-cast v5, Ljava/lang/CharSequence; // type@0012
+000d4e: 7158 3c00 5476                         |0041: invoke-static {v4, v5, v6, v7, v8}, Lkotlin/text/StringsKt;.contains$default:(Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZILjava/lang/Object;)Z // method@003c
+000d54: 0a04                                   |0044: move-result v4
+000d56: 3904 1c00                              |0045: if-nez v4, 0061 // +001c
+000d5a: 0734                                   |0047: move-object v4, v3
+000d5c: 1f04 1200                              |0048: check-cast v4, Ljava/lang/CharSequence; // type@0012
+000d60: 1a05 cf00                              |004a: const-string v5, "intl/auth" // string@00cf
+000d64: 1f05 1200                              |004c: check-cast v5, Ljava/lang/CharSequence; // type@0012
+000d68: 7158 3c00 5476                         |004e: invoke-static {v4, v5, v6, v7, v8}, Lkotlin/text/StringsKt;.contains$default:(Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZILjava/lang/Object;)Z // method@003c
+000d6e: 0a04                                   |0051: move-result v4
+000d70: 3904 0f00                              |0052: if-nez v4, 0061 // +000f
+000d74: 0734                                   |0054: move-object v4, v3
+000d76: 1f04 1200                              |0055: check-cast v4, Ljava/lang/CharSequence; // type@0012
+000d7a: 1a05 8e00                              |0057: const-string v5, "auth/v2" // string@008e
+000d7e: 1f05 1200                              |0059: check-cast v5, Ljava/lang/CharSequence; // type@0012
+000d82: 7158 3c00 5476                         |005b: invoke-static {v4, v5, v6, v7, v8}, Lkotlin/text/StringsKt;.contains$default:(Ljava/lang/CharSequence;Ljava/lang/CharSequence;ZILjava/lang/Object;)Z // method@003c
+000d88: 0a04                                   |005e: move-result v4
+000d8a: 3804 0300                              |005f: if-eqz v4, 0062 // +0003
+000d8e: 1216                                   |0061: const/4 v6, #int 1 // #1
+000d90: 6e10 2a00 0100                         |0062: invoke-virtual {v1}, Lcom/example/data/model/RuijieAccount;.getAccessToken:()Ljava/lang/String; // method@002a
+000d96: 0c04                                   |0065: move-result-object v4
+000d98: 1f04 1200                              |0066: check-cast v4, Ljava/lang/CharSequence; // type@0012
+000d9c: 7110 3e00 0400                         |0068: invoke-static {v4}, Lkotlin/text/StringsKt;.isBlank:(Ljava/lang/CharSequence;)Z // method@003e
+000da2: 0a04                                   |006b: move-result v4
+000da4: 3904 2600                              |006c: if-nez v4, 0092 // +0026
+000da8: 1a04 2000                              |006e: const-string v4, "Authorization" // string@0020
+000dac: 6e20 4a00 4000                         |0070: invoke-virtual {v0, v4}, Lokhttp3/Request;.header:(Ljava/lang/String;)Ljava/lang/String; // method@004a
+000db2: 0c05                                   |0073: move-result-object v5
+000db4: 3905 1e00                              |0074: if-nez v5, 0092 // +001e
+000db8: 3906 1c00                              |0076: if-nez v6, 0092 // +001c
+000dbc: 6e10 2a00 0100                         |0078: invoke-virtual {v1}, Lcom/example/data/model/RuijieAccount;.getAccessToken:()Ljava/lang/String; // method@002a
+000dc2: 0c05                                   |007b: move-result-object v5
+000dc4: 2207 1600                              |007c: new-instance v7, Ljava/lang/StringBuilder; // type@0016
+000dc8: 7010 3200 0700                         |007e: invoke-direct {v7}, Ljava/lang/StringBuilder;.<init>:()V // method@0032
+000dce: 1a08 2200                              |0081: const-string v8, "Bearer " // string@0022
+000dd2: 6e20 3300 8700                         |0083: invoke-virtual {v7, v8}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0033
+000dd8: 0c07                                   |0086: move-result-object v7
+000dda: 6e20 3300 5700                         |0087: invoke-virtual {v7, v5}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0033
+000de0: 0c05                                   |008a: move-result-object v5
+000de2: 6e10 3400 0500                         |008b: invoke-virtual {v5}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@0034
+000de8: 0c05                                   |008e: move-result-object v5
+000dea: 6e30 4900 4205                         |008f: invoke-virtual {v2, v4, v5}, Lokhttp3/Request$Builder;.header:(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/Request$Builder; // method@0049
+000df0: 6e10 4800 0200                         |0092: invoke-virtual {v2}, Lokhttp3/Request$Builder;.build:()Lokhttp3/Request; // method@0048
+000df6: 0c04                                   |0095: move-result-object v4
+000df8: 7220 4000 4a00                         |0096: invoke-interface {v10, v4}, Lokhttp3/Interceptor$Chain;.proceed:(Lokhttp3/Request;)Lokhttp3/Response; // method@0040
+000dfe: 0c04                                   |0099: move-result-object v4
+000e00: 1104                                   |009a: return-object v4
+      catches       : (none)
+      positions     :
+        0x0005 line=23
+        0x0009 line=24
+        0x000f line=25
+        0x0013 line=26
+        0x001b line=27
+        0x0021 line=25
+        0x0022 line=29
+        0x002a line=30
+        0x0062 line=32
+        0x0078 line=33
+        0x0092 line=35
+      locals        :
+        0x0009 - 0x009b reg=0 original Lokhttp3/Request;
+        0x000f - 0x009b reg=1 activeAccount Lcom/example/data/model/RuijieAccount;
+        0x0022 - 0x009b reg=2 requestBuilder Lokhttp3/Request$Builder;
+        0x002a - 0x009b reg=3 path Ljava/lang/String;
+        0x0062 - 0x009b reg=6 isAuthEndpoint Z
+        0x0000 - 0x009b reg=9 this$0 Lcom/example/data/api/RuijieApiClient;
+        0x0000 - 0x009b reg=10 chain Lokhttp3/Interceptor$Chain;
+
+    #3              : (in Lcom/example/data/api/RuijieApiClient;)
+      name          : 'getApiService$default'
+      type          : '(Lcom/example/data/api/RuijieApiClient;Ljava/lang/String;ILjava/lang/Object;)Lcom/example/data/api/RuijieApiService;'
+      access        : 0x1009 (PUBLIC STATIC SYNTHETIC)
+      code          -
+      registers     : 4
+      ins           : 4
+      outs          : 2
+      insns size    : 10 16-bit code units
+000b6c:                                        |[000b6c] com.example.data.api.RuijieApiClient.getApiService$default:(Lcom/example/data/api/RuijieApiClient;Ljava/lang/String;ILjava/lang/Object;)Lcom/example/data/api/RuijieApiService;
+000b7c: dd02 0201                              |0000: and-int/lit8 v2, v2, #int 1 // #01
+000b80: 3802 0300                              |0002: if-eqz v2, 0005 // +0003
+000b84: 1201                                   |0004: const/4 v1, #int 0 // #0
+000b86: 6e20 0600 1000                         |0005: invoke-virtual {v0, v1}, Lcom/example/data/api/RuijieApiClient;.getApiService:(Ljava/lang/String;)Lcom/example/data/api/RuijieApiService; // method@0006
+000b8c: 0c00                                   |0008: move-result-object v0
+000b8e: 1100                                   |0009: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=45
+      locals        :
+        0x0000 - 0x000a reg=0 (null) Lcom/example/data/api/RuijieApiClient;
+        0x0000 - 0x000a reg=1 (null) Ljava/lang/String;
+        0x0000 - 0x000a reg=2 (null) I
+        0x0000 - 0x000a reg=3 (null) Ljava/lang/Object;
+
+  Virtual methods   -
+    #0              : (in Lcom/example/data/api/RuijieApiClient;)
+      name          : 'clearCache'
+      type          : '()V'
+      access        : 0x0011 (PUBLIC FINAL)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 1
+      insns size    : 6 16-bit code units
+000eec:                                        |[000eec] com.example.data.api.RuijieApiClient.clearCache:()V
+000efc: 5410 0600                              |0000: iget-object v0, v1, Lcom/example/data/api/RuijieApiClient;.serviceCache:Ljava/util/concurrent/ConcurrentHashMap; // field@0006
+000f00: 6e10 3700 0000                         |0002: invoke-virtual {v0}, Ljava/util/concurrent/ConcurrentHashMap;.clear:()V // method@0037
+000f06: 0e00                                   |0005: return-void
+      catches       : (none)
+      positions     :
+        0x0000 line=61
+        0x0005 line=62
+      locals        :
+        0x0000 - 0x0006 reg=1 this Lcom/example/data/api/RuijieApiClient;
+
+    #1              : (in Lcom/example/data/api/RuijieApiClient;)
+      name          : 'getApiService'
+      type          : '(Ljava/lang/String;)Lcom/example/data/api/RuijieApiService;'
+      access        : 0x0011 (PUBLIC FINAL)
+      code          -
+      registers     : 11
+      ins           : 2
+      outs          : 5
+      insns size    : 129 16-bit code units
+000b90:                                        |[000b90] com.example.data.api.RuijieApiClient.getApiService:(Ljava/lang/String;)Lcom/example/data/api/RuijieApiService;
+000ba0: 5490 0200                              |0000: iget-object v0, v9, Lcom/example/data/api/RuijieApiClient;.accountManager:Lcom/example/data/session/AccountManager; // field@0002
+000ba4: 6e10 2c00 0000                         |0002: invoke-virtual {v0}, Lcom/example/data/session/AccountManager;.getActiveAccount:()Lcom/example/data/model/RuijieAccount; // method@002c
+000baa: 0c00                                   |0005: move-result-object v0
+000bac: 1201                                   |0006: const/4 v1, #int 0 // #0
+000bae: 380a 1100                              |0007: if-eqz v10, 0018 // +0011
+000bb2: 07a2                                   |0009: move-object v2, v10
+000bb4: 1f02 1200                              |000a: check-cast v2, Ljava/lang/CharSequence; // type@0012
+000bb8: 7110 3e00 0200                         |000c: invoke-static {v2}, Lkotlin/text/StringsKt;.isBlank:(Ljava/lang/CharSequence;)Z // method@003e
+000bbe: 0a03                                   |000f: move-result v3
+000bc0: 3803 0400                              |0010: if-eqz v3, 0014 // +0004
+000bc4: 1202                                   |0012: const/4 v2, #int 0 // #0
+000bc6: 0712                                   |0013: move-object v2, v1
+000bc8: 1f02 1500                              |0014: check-cast v2, Ljava/lang/String; // type@0015
+000bcc: 3902 0600                              |0016: if-nez v2, 001c // +0006
+000bd0: 6e10 2b00 0000                         |0018: invoke-virtual {v0}, Lcom/example/data/model/RuijieAccount;.getEffectiveBaseUrl:()Ljava/lang/String; // method@002b
+000bd6: 0c02                                   |001b: move-result-object v2
+000bd8: 1203                                   |001c: const/4 v3, #int 0 // #0
+000bda: 1224                                   |001d: const/4 v4, #int 2 // #2
+000bdc: 1a05 1a00                              |001e: const-string v5, "/" // string@001a
+000be0: 7151 3d00 5243                         |0020: invoke-static {v2, v5, v3, v4, v1}, Lkotlin/text/StringsKt;.endsWith$default:(Ljava/lang/String;Ljava/lang/String;ZILjava/lang/Object;)Z // method@003d
+000be6: 0a01                                   |0023: move-result v1
+000be8: 3801 0400                              |0024: if-eqz v1, 0028 // +0004
+000bec: 0721                                   |0026: move-object v1, v2
+000bee: 2812                                   |0027: goto 0039 // +0012
+000bf0: 2201 1600                              |0028: new-instance v1, Ljava/lang/StringBuilder; // type@0016
+000bf4: 7010 3200 0100                         |002a: invoke-direct {v1}, Ljava/lang/StringBuilder;.<init>:()V // method@0032
+000bfa: 6e20 3300 2100                         |002d: invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0033
+000c00: 0c01                                   |0030: move-result-object v1
+000c02: 6e20 3300 5100                         |0031: invoke-virtual {v1, v5}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0033
+000c08: 0c01                                   |0034: move-result-object v1
+000c0a: 6e10 3400 0100                         |0035: invoke-virtual {v1}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@0034
+000c10: 0c01                                   |0038: move-result-object v1
+000c12: 5493 0600                              |0039: iget-object v3, v9, Lcom/example/data/api/RuijieApiClient;.serviceCache:Ljava/util/concurrent/ConcurrentHashMap; // field@0006
+000c16: 1f03 1900                              |003b: check-cast v3, Ljava/util/concurrent/ConcurrentMap; // type@0019
+000c1a: 0714                                   |003d: move-object v4, v1
+000c1c: 1205                                   |003e: const/4 v5, #int 0 // #0
+000c1e: 7220 3800 4300                         |003f: invoke-interface {v3, v4}, Ljava/util/concurrent/ConcurrentMap;.get:(Ljava/lang/Object;)Ljava/lang/Object; // method@0038
+000c24: 0c06                                   |0042: move-result-object v6
+000c26: 3906 3500                              |0043: if-nez v6, 0078 // +0035
+000c2a: 1206                                   |0045: const/4 v6, #int 0 // #0
+000c2c: 2207 2900                              |0046: new-instance v7, Lretrofit2/Retrofit$Builder; // type@0029
+000c30: 7010 4d00 0700                         |0048: invoke-direct {v7}, Lretrofit2/Retrofit$Builder;.<init>:()V // method@004d
+000c36: 6e20 4f00 1700                         |004b: invoke-virtual {v7, v1}, Lretrofit2/Retrofit$Builder;.baseUrl:(Ljava/lang/String;)Lretrofit2/Retrofit$Builder; // method@004f
+000c3c: 0c07                                   |004e: move-result-object v7
+000c3e: 5498 0500                              |004f: iget-object v8, v9, Lcom/example/data/api/RuijieApiClient;.okHttpClient:Lokhttp3/OkHttpClient; // field@0005
+000c42: 6e20 5100 8700                         |0051: invoke-virtual {v7, v8}, Lretrofit2/Retrofit$Builder;.client:(Lokhttp3/OkHttpClient;)Lretrofit2/Retrofit$Builder; // method@0051
+000c48: 0c07                                   |0054: move-result-object v7
+000c4a: 5498 0400                              |0055: iget-object v8, v9, Lcom/example/data/api/RuijieApiClient;.moshi:Lcom/squareup/moshi/Moshi; // field@0004
+000c4e: 7110 5300 0800                         |0057: invoke-static {v8}, Lretrofit2/converter/moshi/MoshiConverterFactory;.create:(Lcom/squareup/moshi/Moshi;)Lretrofit2/converter/moshi/MoshiConverterFactory; // method@0053
+000c54: 0c08                                   |005a: move-result-object v8
+000c56: 1f08 2800                              |005b: check-cast v8, Lretrofit2/Converter$Factory; // type@0028
+000c5a: 6e20 4e00 8700                         |005d: invoke-virtual {v7, v8}, Lretrofit2/Retrofit$Builder;.addConverterFactory:(Lretrofit2/Converter$Factory;)Lretrofit2/Retrofit$Builder; // method@004e
+000c60: 0c07                                   |0060: move-result-object v7
+000c62: 6e10 5000 0700                         |0061: invoke-virtual {v7}, Lretrofit2/Retrofit$Builder;.build:()Lretrofit2/Retrofit; // method@0050
+000c68: 0c07                                   |0064: move-result-object v7
+000c6a: 1c08 0500                              |0065: const-class v8, Lcom/example/data/api/RuijieApiService; // type@0005
+000c6e: 6e20 5200 8700                         |0067: invoke-virtual {v7, v8}, Lretrofit2/Retrofit;.create:(Ljava/lang/Class;)Ljava/lang/Object; // method@0052
+000c74: 0c07                                   |006a: move-result-object v7
+000c76: 1f07 0500                              |006b: check-cast v7, Lcom/example/data/api/RuijieApiService; // type@0005
+000c7a: 0000                                   |006d: nop // spacer
+000c7c: 1206                                   |006e: const/4 v6, #int 0 // #0
+000c7e: 7230 3900 4307                         |006f: invoke-interface {v3, v4, v7}, Ljava/util/concurrent/ConcurrentMap;.putIfAbsent:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; // method@0039
+000c84: 0c08                                   |0072: move-result-object v8
+000c86: 3908 0400                              |0073: if-nez v8, 0077 // +0004
+000c8a: 0776                                   |0075: move-object v6, v7
+000c8c: 2802                                   |0076: goto 0078 // +0002
+000c8e: 0786                                   |0077: move-object v6, v8
+000c90: 0000                                   |0078: nop // spacer
+000c92: 1a03 c100                              |0079: const-string v3, "getOrPut(...)" // string@00c1
+000c96: 7120 3a00 3600                         |007b: invoke-static {v6, v3}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V // method@003a
+000c9c: 1f06 0500                              |007e: check-cast v6, Lcom/example/data/api/RuijieApiService; // type@0005
+000ca0: 1106                                   |0080: return-object v6
+      catches       : (none)
+      positions     :
+        0x0000 line=46
+        0x0006 line=47
+        0x0012 line=65
+        0x0013 line=47
+        0x001c line=48
+        0x0039 line=50
+        0x003f line=66
+        0x0045 line=67
+        0x0046 line=51
+        0x004b line=52
+        0x004f line=53
+        0x0055 line=54
+        0x0061 line=55
+        0x0065 line=56
+        0x006d line=67
+        0x006e line=68
+        0x006f line=67
+        0x0078 line=66
+        0x0079 line=50
+      locals        :
+        0x0013 - 0x0014 reg=2 $i$a$-ifBlank-RuijieApiClient$getApiService$rawUrl$1\1\47\0 I
+        0x0046 - 0x006d reg=6 $i$a$-getOrPut-RuijieApiClient$getApiService$1\4\67\0 I
+        0x006f - 0x0078 reg=6 $i$a$-let-MapsKt__MapsJVMKt$getOrPut$1\3\68\2 I
+        0x006e - 0x0078 reg=7 default\2 Ljava/lang/Object;
+        0x003d - 0x0079 reg=3 $this$getOrPut\2 Ljava/util/concurrent/ConcurrentMap;
+        0x003e - 0x0079 reg=4 key\2 Ljava/lang/Object;
+        0x003f - 0x0079 reg=5 $i$f$getOrPut\2\50 I
+        0x0006 - 0x0081 reg=0 activeAccount Lcom/example/data/model/RuijieAccount;
+        0x0039 - 0x0081 reg=1 sanitizedUrl Ljava/lang/String;
+        0x001c - 0x0081 reg=2 rawUrl Ljava/lang/String;
+        0x0000 - 0x0081 reg=9 this Lcom/example/data/api/RuijieApiClient;
+        0x0000 - 0x0081 reg=10 customBaseUrl Ljava/lang/String;
+
+    #2              : (in Lcom/example/data/api/RuijieApiClient;)
+      name          : 'getMoshi'
+      type          : '()Lcom/squareup/moshi/Moshi;'
+      access        : 0x0011 (PUBLIC FINAL)
+      code          -
+      registers     : 2
+      ins           : 1
+      outs          : 0
+      insns size    : 3 16-bit code units
+000ca4:                                        |[000ca4] com.example.data.api.RuijieApiClient.getMoshi:()Lcom/squareup/moshi/Moshi;
+000cb4: 5410 0400                              |0000: iget-object v0, v1, Lcom/example/data/api/RuijieApiClient;.moshi:Lcom/squareup/moshi/Moshi; // field@0004
+000cb8: 1100                                   |0002: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=16
+      locals        :
+        0x0000 - 0x0003 reg=1 this Lcom/example/data/api/RuijieApiClient;
+
+  source_file_idx   : 113 (RuijieApiClient.kt)
+
+Class #2            -
+  Class descriptor  : 'Lcom/example/data/api/RuijieApiService$DefaultImpls;'
+  Access flags      : 0x0011 (PUBLIC FINAL)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Lcom/example/data/api/RuijieApiService$DefaultImpls;)
+      name          : 'createVoucherWeb$default'
+      type          : '(Lcom/example/data/api/RuijieApiService;Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;JLjava/lang/String;Lokhttp3/RequestBody;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;'
+      access        : 0x1009 (PUBLIC STATIC SYNTHETIC)
+      code          -
+      registers     : 13
+      ins           : 13
+      outs          : 13
+      insns size    : 5 16-bit code units
+000f08:                                        |[000f08] com.example.data.api.RuijieApiService$DefaultImpls.createVoucherWeb$default:(Lcom/example/data/api/RuijieApiService;Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;JLjava/lang/String;Lokhttp3/RequestBody;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+000f18: 770d 1500 0000                         |0000: invoke-static/range {v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11, v12}, Lcom/example/data/api/RuijieApiService;.createVoucherWeb$default:(Lcom/example/data/api/RuijieApiService;Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;JLjava/lang/String;Lokhttp3/RequestBody;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object; // method@0015
+000f1e: 0c00                                   |0003: move-result-object v0
+000f20: 1100                                   |0004: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=137
+        0x0004 line=146
+      locals        :
+        0x0000 - 0x0005 reg=0 (null) Lcom/example/data/api/RuijieApiService;
+        0x0000 - 0x0005 reg=1 (null) Ljava/lang/String;
+        0x0000 - 0x0005 reg=2 (null) Ljava/lang/String;
+        0x0000 - 0x0005 reg=3 (null) J
+        0x0000 - 0x0005 reg=5 (null) Ljava/lang/String;
+        0x0000 - 0x0005 reg=6 (null) J
+        0x0000 - 0x0005 reg=8 (null) Ljava/lang/String;
+        0x0000 - 0x0005 reg=9 (null) Lokhttp3/RequestBody;
+        0x0000 - 0x0005 reg=10 (null) Lkotlin/coroutines/Continuation;
+        0x0000 - 0x0005 reg=11 (null) I
+        0x0000 - 0x0005 reg=12 (null) Ljava/lang/Object;
+
+    #1              : (in Lcom/example/data/api/RuijieApiService$DefaultImpls;)
+      name          : 'getAccountInfo$default'
+      type          : '(Lcom/example/data/api/RuijieApiService;Ljava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;'
+      access        : 0x1009 (PUBLIC STATIC SYNTHETIC)
+      code          -
+      registers     : 5
+      ins           : 5
+      outs          : 5
+      insns size    : 5 16-bit code units
+000f24:                                        |[000f24] com.example.data.api.RuijieApiService$DefaultImpls.getAccountInfo$default:(Lcom/example/data/api/RuijieApiService;Ljava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+000f34: 7154 1a00 1032                         |0000: invoke-static {v0, v1, v2, v3, v4}, Lcom/example/data/api/RuijieApiService;.getAccountInfo$default:(Lcom/example/data/api/RuijieApiService;Ljava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object; // method@001a
+000f3a: 0c00                                   |0003: move-result-object v0
+000f3c: 1100                                   |0004: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=39
+        0x0004 line=42
+      locals        :
+        0x0000 - 0x0005 reg=0 (null) Lcom/example/data/api/RuijieApiService;
+        0x0000 - 0x0005 reg=1 (null) Ljava/lang/String;
+        0x0000 - 0x0005 reg=2 (null) Lkotlin/coroutines/Continuation;
+        0x0000 - 0x0005 reg=3 (null) I
+        0x0000 - 0x0005 reg=4 (null) Ljava/lang/Object;
+
+    #2              : (in Lcom/example/data/api/RuijieApiService$DefaultImpls;)
+      name          : 'getClientAccessToken$default'
+      type          : '(Lcom/example/data/api/RuijieApiService;Ljava/lang/String;Lcom/example/data/model/RuijieTokenRequestBody;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;'
+      access        : 0x1009 (PUBLIC STATIC SYNTHETIC)
+      code          -
+      registers     : 6
+      ins           : 6
+      outs          : 6
+      insns size    : 5 16-bit code units
+000f40:                                        |[000f40] com.example.data.api.RuijieApiService$DefaultImpls.getClientAccessToken$default:(Lcom/example/data/api/RuijieApiService;Ljava/lang/String;Lcom/example/data/model/RuijieTokenRequestBody;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+000f50: 7706 1c00 0000                         |0000: invoke-static/range {v0, v1, v2, v3, v4, v5}, Lcom/example/data/api/RuijieApiService;.getClientAccessToken$default:(Lcom/example/data/api/RuijieApiService;Ljava/lang/String;Lcom/example/data/model/RuijieTokenRequestBody;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object; // method@001c
+000f56: 0c00                                   |0003: move-result-object v0
+000f58: 1100                                   |0004: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=48
+        0x0004 line=52
+      locals        :
+        0x0000 - 0x0005 reg=0 (null) Lcom/example/data/api/RuijieApiService;
+        0x0000 - 0x0005 reg=1 (null) Ljava/lang/String;
+        0x0000 - 0x0005 reg=2 (null) Lcom/example/data/model/RuijieTokenRequestBody;
+        0x0000 - 0x0005 reg=3 (null) Lkotlin/coroutines/Continuation;
+        0x0000 - 0x0005 reg=4 (null) I
+        0x0000 - 0x0005 reg=5 (null) Ljava/lang/Object;
+
+    #3              : (in Lcom/example/data/api/RuijieApiService$DefaultImpls;)
+      name          : 'getGroupSingleTree$default'
+      type          : '(Lcom/example/data/api/RuijieApiService;Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;'
+      access        : 0x1009 (PUBLIC STATIC SYNTHETIC)
+      code          -
+      registers     : 6
+      ins           : 6
+      outs          : 6
+      insns size    : 5 16-bit code units
+000f5c:                                        |[000f5c] com.example.data.api.RuijieApiService$DefaultImpls.getGroupSingleTree$default:(Lcom/example/data/api/RuijieApiService;Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+000f6c: 7706 1f00 0000                         |0000: invoke-static/range {v0, v1, v2, v3, v4, v5}, Lcom/example/data/api/RuijieApiService;.getGroupSingleTree$default:(Lcom/example/data/api/RuijieApiService;Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object; // method@001f
+000f72: 0c00                                   |0003: move-result-object v0
+000f74: 1100                                   |0004: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=58
+        0x0004 line=62
+      locals        :
+        0x0000 - 0x0005 reg=0 (null) Lcom/example/data/api/RuijieApiService;
+        0x0000 - 0x0005 reg=1 (null) Ljava/lang/String;
+        0x0000 - 0x0005 reg=2 (null) Ljava/lang/String;
+        0x0000 - 0x0005 reg=3 (null) Lkotlin/coroutines/Continuation;
+        0x0000 - 0x0005 reg=4 (null) I
+        0x0000 - 0x0005 reg=5 (null) Ljava/lang/Object;
+
+    #4              : (in Lcom/example/data/api/RuijieApiService$DefaultImpls;)
+      name          : 'getUserGroupListIntl$default'
+      type          : '(Lcom/example/data/api/RuijieApiService;JLjava/lang/String;IILkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;'
+      access        : 0x1009 (PUBLIC STATIC SYNTHETIC)
+      code          -
+      registers     : 9
+      ins           : 9
+      outs          : 9
+      insns size    : 5 16-bit code units
+000f78:                                        |[000f78] com.example.data.api.RuijieApiService$DefaultImpls.getUserGroupListIntl$default:(Lcom/example/data/api/RuijieApiService;JLjava/lang/String;IILkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+000f88: 7709 2400 0000                         |0000: invoke-static/range {v0, v1, v2, v3, v4, v5, v6, v7, v8}, Lcom/example/data/api/RuijieApiService;.getUserGroupListIntl$default:(Lcom/example/data/api/RuijieApiService;JLjava/lang/String;IILkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object; // method@0024
+000f8e: 0c00                                   |0003: move-result-object v0
+000f90: 1100                                   |0004: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=125
+        0x0004 line=131
+      locals        :
+        0x0000 - 0x0005 reg=0 (null) Lcom/example/data/api/RuijieApiService;
+        0x0000 - 0x0005 reg=1 (null) J
+        0x0000 - 0x0005 reg=3 (null) Ljava/lang/String;
+        0x0000 - 0x0005 reg=4 (null) I
+        0x0000 - 0x0005 reg=5 (null) I
+        0x0000 - 0x0005 reg=6 (null) Lkotlin/coroutines/Continuation;
+        0x0000 - 0x0005 reg=7 (null) I
+        0x0000 - 0x0005 reg=8 (null) Ljava/lang/Object;
+
+    #5              : (in Lcom/example/data/api/RuijieApiService$DefaultImpls;)
+      name          : 'getVoucherListOpen$default'
+      type          : '(Lcom/example/data/api/RuijieApiService;JLjava/lang/String;IILkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;'
+      access        : 0x1009 (PUBLIC STATIC SYNTHETIC)
+      code          -
+      registers     : 9
+      ins           : 9
+      outs          : 9
+      insns size    : 5 16-bit code units
+000f94:                                        |[000f94] com.example.data.api.RuijieApiService$DefaultImpls.getVoucherListOpen$default:(Lcom/example/data/api/RuijieApiService;JLjava/lang/String;IILkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+000fa4: 7709 2600 0000                         |0000: invoke-static/range {v0, v1, v2, v3, v4, v5, v6, v7, v8}, Lcom/example/data/api/RuijieApiService;.getVoucherListOpen$default:(Lcom/example/data/api/RuijieApiService;JLjava/lang/String;IILkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object; // method@0026
+000faa: 0c00                                   |0003: move-result-object v0
+000fac: 1100                                   |0004: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=68
+        0x0004 line=74
+      locals        :
+        0x0000 - 0x0005 reg=0 (null) Lcom/example/data/api/RuijieApiService;
+        0x0000 - 0x0005 reg=1 (null) J
+        0x0000 - 0x0005 reg=3 (null) Ljava/lang/String;
+        0x0000 - 0x0005 reg=4 (null) I
+        0x0000 - 0x0005 reg=5 (null) I
+        0x0000 - 0x0005 reg=6 (null) Lkotlin/coroutines/Continuation;
+        0x0000 - 0x0005 reg=7 (null) I
+        0x0000 - 0x0005 reg=8 (null) Ljava/lang/Object;
+
+    #6              : (in Lcom/example/data/api/RuijieApiService$DefaultImpls;)
+      name          : 'getVoucherListTenant$default'
+      type          : '(Lcom/example/data/api/RuijieApiService;Ljava/lang/String;JLjava/lang/String;IILjava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;'
+      access        : 0x1009 (PUBLIC STATIC SYNTHETIC)
+      code          -
+      registers     : 11
+      ins           : 11
+      outs          : 11
+      insns size    : 5 16-bit code units
+000fb0:                                        |[000fb0] com.example.data.api.RuijieApiService$DefaultImpls.getVoucherListTenant$default:(Lcom/example/data/api/RuijieApiService;Ljava/lang/String;JLjava/lang/String;IILjava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+000fc0: 770b 2800 0000                         |0000: invoke-static/range {v0, v1, v2, v3, v4, v5, v6, v7, v8, v9, v10}, Lcom/example/data/api/RuijieApiService;.getVoucherListTenant$default:(Lcom/example/data/api/RuijieApiService;Ljava/lang/String;JLjava/lang/String;IILjava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object; // method@0028
+000fc6: 0c00                                   |0003: move-result-object v0
+000fc8: 1100                                   |0004: return-object v0
+      catches       : (none)
+      positions     :
+        0x0000 line=80
+        0x0004 line=88
+      locals        :
+        0x0000 - 0x0005 reg=0 (null) Lcom/example/data/api/RuijieApiService;
+        0x0000 - 0x0005 reg=1 (null) Ljava/lang/String;
+        0x0000 - 0x0005 reg=2 (null) J
+        0x0000 - 0x0005 reg=4 (null) Ljava/lang/String;
+        0x0000 - 0x0005 reg=5 (null) I
+        0x0000 - 0x0005 reg=6 (null) I
+        0x0000 - 0x0005 reg=7 (null) Ljava/lang/String;
+        0x0000 - 0x0005 reg=8 (null) Lkotlin/coroutines/Continuation;
+        0x0000 - 0x0005 reg=9 (null) I
+        0x0000 - 0x0005 reg=10 (null) Ljava/lang/Object;
+
+  Virtual methods   -
+  source_file_idx   : 114 (RuijieApiService.kt)
+
+Class #3            -
+  Class descriptor  : 'Lcom/example/data/api/RuijieApiService;'
+  Access flags      : 0x0601 (PUBLIC INTERFACE ABSTRACT)
+  Superclass        : 'Ljava/lang/Object;'
+  Interfaces        -
+  Static fields     -
+  Instance fields   -
+  Direct methods    -
+    #0              : (in Lcom/example/data/api/RuijieApiService;)
+      name          : 'createVoucherWeb$default'
+      type          : '(Lcom/example/data/api/RuijieApiService;Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;JLjava/lang/String;Lokhttp3/RequestBody;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;'
+      access        : 0x1009 (PUBLIC STATIC SYNTHETIC)
+      code          -
+      registers     : 25
+      ins           : 13
+      outs          : 11
+      insns size    : 37 16-bit code units
+000fcc:                                        |[000fcc] com.example.data.api.RuijieApiService.createVoucherWeb$default:(Lcom/example/data/api/RuijieApiService;Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;JLjava/lang/String;Lokhttp3/RequestBody;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+000fdc: 3918 1d00                              |0000: if-nez v24, 001d // +001d
+000fe0: dd00 1720                              |0002: and-int/lit8 v0, v23, #int 32 // #20
+000fe4: 3800 0600                              |0004: if-eqz v0, 000a // +0006
+000fe8: 1a00 af00                              |0006: const-string v0, "en" // string@00af
+000fec: 0709                                   |0008: move-object v9, v0
+000fee: 2803                                   |0009: goto 000c // +0003
+000ff0: 0809 1400                              |000a: move-object/from16 v9, v20
+000ff4: 07c1                                   |000c: move-object v1, v12
+000ff6: 07d2                                   |000d: move-object v2, v13
+000ff8: 07e3                                   |000e: move-object v3, v14
+000ffa: 04f4                                   |000f: move-wide v4, v15
+000ffc: 0806 1100                              |0010: move-object/from16 v6, v17
+001000: 0507 1200                              |0012: move-wide/from16 v7, v18
+001004: 080a 1500                              |0014: move-object/from16 v10, v21
+001008: 080b 1600                              |0016: move-object/from16 v11, v22
+00100c: 780b 1400 0100                         |0018: invoke-interface/range {v1, v2, v3, v4, v5, v6, v7, v8, v9, v10, v11}, Lcom/example/data/api/RuijieApiService;.createVoucherWeb:(Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;JLjava/lang/String;Lokhttp3/RequestBody;Lkotlin/coroutines/Continuation;)Ljava/lang/Object; // method@0014
+001012: 0c0c                                   |001b: move-result-object v12
+001014: 110c                                   |001c: return-object v12
+001016: 220c 1700                              |001d: new-instance v12, Ljava/lang/UnsupportedOperationException; // type@0017
+00101a: 1a0d 7500                              |001f: const-string v13, "Super calls with default arguments not supported in this target, function: createVoucherWeb" // string@0075
+00101e: 7020 3500 dc00                         |0021: invoke-direct {v12, v13}, Ljava/lang/UnsupportedOperationException;.<init>:(Ljava/lang/String;)V // method@0035
+001024: 270c                                   |0024: throw v12
+      catches       : (none)
+      positions     :
+        0x0000 line=137
+        0x0006 line=144
+        0x000a line=137
+      locals        :
+        0x0000 - 0x0025 reg=12 (null) Lcom/example/data/api/RuijieApiService;
+        0x0000 - 0x0025 reg=13 (null) Ljava/lang/String;
+        0x0000 - 0x0025 reg=14 (null) Ljava/lang/String;
+        0x0000 - 0x0025 reg=15 (null) J
+        0x0000 - 0x0025 reg=17 (null) Ljava/lang/String;
+        0x0000 - 0x0025 reg=18 (null) J
+        0x0000 - 0x0025 reg=20 (null) Ljava/lang/String;
+        0x0000 - 0x0025 reg=21 (null) Lokhttp3/RequestBody;
+        0x0000 - 0x0025 reg=22 (null) Lkotlin/coroutines/Continuation;
+        0x0000 - 0x0025 reg=23 (null) I
+        0x0000 - 0x0025 reg=24 (null) Ljava/lang/Object;
+
+    #1              : (in Lcom/example/data/api/RuijieApiService;)
+      name          : 'getAccountInfo$default'
+      type          : '(Lcom/example/data/api/RuijieApiService;Ljava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;'
+      access        : 0x1009 (PUBLIC STATIC SYNTHETIC)
+      code          -
+      registers     : 5
+      ins           : 5
+      outs          : 3
+      insns size    : 20 16-bit code units
+001028:                                        |[001028] com.example.data.api.RuijieApiService.getAccountInfo$default:(Lcom/example/data/api/RuijieApiService;Ljava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+001038: 3904 0c00                              |0000: if-nez v4, 000c // +000c
+00103c: dd03 0301                              |0002: and-int/lit8 v3, v3, #int 1 // #01
+001040: 3803 0300                              |0004: if-eqz v3, 0007 // +0003
+001044: 1201                                   |0006: const/4 v1, #int 0 // #0
+001046: 7230 1900 1002                         |0007: invoke-interface {v0, v1, v2}, Lcom/example/data/api/RuijieApiService;.getAccountInfo:(Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object; // method@0019
+00104c: 0c00                                   |000a: move-result-object v0
+00104e: 1100                                   |000b: return-object v0
+001050: 2200 1700                              |000c: new-instance v0, Ljava/lang/UnsupportedOperationException; // type@0017
+001054: 1a01 7600                              |000e: const-string v1, "Super calls with default arguments not supported in this target, function: getAccountInfo" // string@0076
+001058: 7020 3500 1000                         |0010: invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;.<init>:(Ljava/lang/String;)V // method@0035
+00105e: 2700                                   |0013: throw v0
+      catches       : (none)
+      positions     :
+        0x0000 line=39
+        0x0006 line=41
+        0x0007 line=39
+      locals        :
+        0x0000 - 0x0014 reg=0 (null) Lcom/example/data/api/RuijieApiService;
+        0x0000 - 0x0014 reg=1 (null) Ljava/lang/String;
+        0x0000 - 0x0014 reg=2 (null) Lkotlin/coroutines/Continuation;
+        0x0000 - 0x0014 reg=3 (null) I
+        0x0000 - 0x0014 reg=4 (null) Ljava/lang/Object;
+
+    #2              : (in Lcom/example/data/api/RuijieApiService;)
+      name          : 'getClientAccessToken$default'
+      type          : '(Lcom/example/data/api/RuijieApiService;Ljava/lang/String;Lcom/example/data/model/RuijieTokenRequestBody;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;'
+      access        : 0x1009 (PUBLIC STATIC SYNTHETIC)
+      code          -
+      registers     : 6
+      ins           : 6
+      outs          : 4
+      insns size    : 21 16-bit code units
+001060:                                        |[001060] com.example.data.api.RuijieApiService.getClientAccessToken$default:(Lcom/example/data/api/RuijieApiService;Ljava/lang/String;Lcom/example/data/model/RuijieTokenRequestBody;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+001070: 3905 0d00                              |0000: if-nez v5, 000d // +000d
+001074: dd04 0401                              |0002: and-int/lit8 v4, v4, #int 1 // #01
+001078: 3804 0400                              |0004: if-eqz v4, 0008 // +0004
+00107c: 1a01 a900                              |0006: const-string v1, "d63dss0a81e4415a889ac5b78fsc904a" // string@00a9
+001080: 7240 1b00 1032                         |0008: invoke-interface {v0, v1, v2, v3}, Lcom/example/data/api/RuijieApiService;.getClientAccessToken:(Ljava/lang/String;Lcom/example/data/model/RuijieTokenRequestBody;Lkotlin/coroutines/Continuation;)Ljava/lang/Object; // method@001b
+001086: 0c00                                   |000b: move-result-object v0
+001088: 1100                                   |000c: return-object v0
+00108a: 2200 1700                              |000d: new-instance v0, Ljava/lang/UnsupportedOperationException; // type@0017
+00108e: 1a01 7700                              |000f: const-string v1, "Super calls with default arguments not supported in this target, function: getClientAccessToken" // string@0077
+001092: 7020 3500 1000                         |0011: invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;.<init>:(Ljava/lang/String;)V // method@0035
+001098: 2700                                   |0014: throw v0
+      catches       : (none)
+      positions     :
+        0x0000 line=48
+        0x0006 line=50
+        0x0008 line=48
+      locals        :
+        0x0000 - 0x0015 reg=0 (null) Lcom/example/data/api/RuijieApiService;
+        0x0000 - 0x0015 reg=1 (null) Ljava/lang/String;
+        0x0000 - 0x0015 reg=2 (null) Lcom/example/data/model/RuijieTokenRequestBody;
+        0x0000 - 0x0015 reg=3 (null) Lkotlin/coroutines/Continuation;
+        0x0000 - 0x0015 reg=4 (null) I
+        0x0000 - 0x0015 reg=5 (null) Ljava/lang/Object;
+
+    #3              : (in Lcom/example/data/api/RuijieApiService;)
+      name          : 'getGroupSingleTree$default'
+      type          : '(Lcom/example/data/api/RuijieApiService;Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;'
+      access        : 0x1009 (PUBLIC STATIC SYNTHETIC)
+      code          -
+      registers     : 6
+      ins           : 6
+      outs          : 4
+      insns size    : 21 16-bit code units
+00109c:                                        |[00109c] com.example.data.api.RuijieApiService.getGroupSingleTree$default:(Lcom/example/data/api/RuijieApiService;Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+0010ac: 3905 0d00                              |0000: if-nez v5, 000d // +000d
+0010b0: dd04 0401                              |0002: and-int/lit8 v4, v4, #int 1 // #01
+0010b4: 3804 0400                              |0004: if-eqz v4, 0008 // +0004
+0010b8: 1a01 2100                              |0006: const-string v1, "BUILDING" // string@0021
+0010bc: 7240 1e00 1032                         |0008: invoke-interface {v0, v1, v2, v3}, Lcom/example/data/api/RuijieApiService;.getGroupSingleTree:(Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object; // method@001e
+0010c2: 0c00                                   |000b: move-result-object v0
+0010c4: 1100                                   |000c: return-object v0
+0010c6: 2200 1700                              |000d: new-instance v0, Ljava/lang/UnsupportedOperationException; // type@0017
+0010ca: 1a01 7800                              |000f: const-string v1, "Super calls with default arguments not supported in this target, function: getGroupSingleTree" // string@0078
+0010ce: 7020 3500 1000                         |0011: invoke-direct {v0, v1}, Ljava/lang/UnsupportedOperationException;.<init>:(Ljava/lang/String;)V // method@0035
+0010d4: 2700                                   |0014: throw v0
+      catches       : (none)
+      positions     :
+        0x0000 line=58
+        0x0006 line=60
+        0x0008 line=58
+      locals        :
+        0x0000 - 0x0015 reg=0 (null) Lcom/example/data/api/RuijieApiService;
+        0x0000 - 0x0015 reg=1 (null) Ljava/lang/String;
+        0x0000 - 0x0015 reg=2 (null) Ljava/lang/String;
+        0x0000 - 0x0015 reg=3 (null) Lkotlin/coroutines/Continuation;
+        0x0000 - 0x0015 reg=4 (null) I
+        0x0000 - 0x0015 reg=5 (null) Ljava/lang/Object;
+
+    #4              : (in Lcom/example/data/api/RuijieApiService;)
+      name          : 'getUserGroupListIntl$default'
+      type          : '(Lcom/example/data/api/RuijieApiService;JLjava/lang/String;IILkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;'
+      access        : 0x1009 (PUBLIC STATIC SYNTHETIC)
+      code          -
+      registers     : 16
+      ins           : 9
+      outs          : 7
+      insns size    : 36 16-bit code units
+0010d8:                                        |[0010d8] com.example.data.api.RuijieApiService.getUserGroupListIntl$default:(Lcom/example/data/api/RuijieApiService;JLjava/lang/String;IILkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+0010e8: 390f 1c00                              |0000: if-nez v15, 001c // +001c
+0010ec: dd0f 0e04                              |0002: and-int/lit8 v15, v14, #int 4 // #04
+0010f0: 380f 0500                              |0004: if-eqz v15, 0009 // +0005
+0010f4: 121b                                   |0006: const/4 v11, #int 1 // #1
+0010f6: 01b4                                   |0007: move v4, v11
+0010f8: 2802                                   |0008: goto 000a // +0002
+0010fa: 01b4                                   |0009: move v4, v11
+0010fc: dd0b 0e08                              |000a: and-int/lit8 v11, v14, #int 8 // #08
+001100: 380b 0600                              |000c: if-eqz v11, 0012 // +0006
+001104: 130c 6400                              |000e: const/16 v12, #int 100 // #64
+001108: 01c5                                   |0010: move v5, v12
+00110a: 2802                                   |0011: goto 0013 // +0002
+00110c: 01c5                                   |0012: move v5, v12
+00110e: 0770                                   |0013: move-object v0, v7
+001110: 0481                                   |0014: move-wide v1, v8
+001112: 07a3                                   |0015: move-object v3, v10
+001114: 07d6                                   |0016: move-object v6, v13
+001116: 7807 2300 0000                         |0017: invoke-interface/range {v0, v1, v2, v3, v4, v5, v6}, Lcom/example/data/api/RuijieApiService;.getUserGroupListIntl:(JLjava/lang/String;IILkotlin/coroutines/Continuation;)Ljava/lang/Object; // method@0023
+00111c: 0c07                                   |001a: move-result-object v7
+00111e: 1107                                   |001b: return-object v7
+001120: 2207 1700                              |001c: new-instance v7, Ljava/lang/UnsupportedOperationException; // type@0017
+001124: 1a08 7900                              |001e: const-string v8, "Super calls with default arguments not supported in this target, function: getUserGroupListIntl" // string@0079
+001128: 7020 3500 8700                         |0020: invoke-direct {v7, v8}, Ljava/lang/UnsupportedOperationException;.<init>:(Ljava/lang/String;)V // method@0035
+00112e: 2707                                   |0023: throw v7
+      catches       : (none)
+      positions     :
+        0x0000 line=125
+        0x0006 line=129
+        0x0009 line=125
+        0x000e line=130
+        0x0012 line=125
+      locals        :
+        0x0000 - 0x0024 reg=7 (null) Lcom/example/data/api/RuijieApiService;
+        0x0000 - 0x0024 reg=8 (null) J
+        0x0000 - 0x0024 reg=10 (null) Ljava/lang/String;
+        0x0000 - 0x0024 reg=11 (null) I
+        0x0000 - 0x0024 reg=12 (null) I
+        0x0000 - 0x0024 reg=13 (null) Lkotlin/coroutines/Continuation;
+        0x0000 - 0x0024 reg=14 (null) I
+        0x0000 - 0x0024 reg=15 (null) Ljava/lang/Object;
+
+    #5              : (in Lcom/example/data/api/RuijieApiService;)
+      name          : 'getVoucherListOpen$default'
+      type          : '(Lcom/example/data/api/RuijieApiService;JLjava/lang/String;IILkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;'
+      access        : 0x1009 (PUBLIC STATIC SYNTHETIC)
+      code          -
+      registers     : 16
+      ins           : 9
+      outs          : 7
+      insns size    : 36 16-bit code units
+001130:                                        |[001130] com.example.data.api.RuijieApiService.getVoucherListOpen$default:(Lcom/example/data/api/RuijieApiService;JLjava/lang/String;IILkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+001140: 390f 1c00                              |0000: if-nez v15, 001c // +001c
+001144: dd0f 0e04                              |0002: and-int/lit8 v15, v14, #int 4 // #04
+001148: 380f 0500                              |0004: if-eqz v15, 0009 // +0005
+00114c: 120b                                   |0006: const/4 v11, #int 0 // #0
+00114e: 01b4                                   |0007: move v4, v11
+001150: 2802                                   |0008: goto 000a // +0002
+001152: 01b4                                   |0009: move v4, v11
+001154: dd0b 0e08                              |000a: and-int/lit8 v11, v14, #int 8 // #08
+001158: 380b 0600                              |000c: if-eqz v11, 0012 // +0006
+00115c: 130c c800                              |000e: const/16 v12, #int 200 // #c8
+001160: 01c5                                   |0010: move v5, v12
+001162: 2802                                   |0011: goto 0013 // +0002
+001164: 01c5                                   |0012: move v5, v12
+001166: 0770                                   |0013: move-object v0, v7
+001168: 0481                                   |0014: move-wide v1, v8
+00116a: 07a3                                   |0015: move-object v3, v10
+00116c: 07d6                                   |0016: move-object v6, v13
+00116e: 7807 2500 0000                         |0017: invoke-interface/range {v0, v1, v2, v3, v4, v5, v6}, Lcom/example/data/api/RuijieApiService;.getVoucherListOpen:(JLjava/lang/String;IILkotlin/coroutines/Continuation;)Ljava/lang/Object; // method@0025
+001174: 0c07                                   |001a: move-result-object v7
+001176: 1107                                   |001b: return-object v7
+001178: 2207 1700                              |001c: new-instance v7, Ljava/lang/UnsupportedOperationException; // type@0017
+00117c: 1a08 7a00                              |001e: const-string v8, "Super calls with default arguments not supported in this target, function: getVoucherListOpen" // string@007a
+001180: 7020 3500 8700                         |0020: invoke-direct {v7, v8}, Ljava/lang/UnsupportedOperationException;.<init>:(Ljava/lang/String;)V // method@0035
+001186: 2707                                   |0023: throw v7
+      catches       : (none)
+      positions     :
+        0x0000 line=68
+        0x0006 line=72
+        0x0009 line=68
+        0x000e line=73
+        0x0012 line=68
+      locals        :
+        0x0000 - 0x0024 reg=7 (null) Lcom/example/data/api/RuijieApiService;
+        0x0000 - 0x0024 reg=8 (null) J
+        0x0000 - 0x0024 reg=10 (null) Ljava/lang/String;
+        0x0000 - 0x0024 reg=11 (null) I
+        0x0000 - 0x0024 reg=12 (null) I
+        0x0000 - 0x0024 reg=13 (null) Lkotlin/coroutines/Continuation;
+        0x0000 - 0x0024 reg=14 (null) I
+        0x0000 - 0x0024 reg=15 (null) Ljava/lang/Object;
+
+    #6              : (in Lcom/example/data/api/RuijieApiService;)
+      name          : 'getVoucherListTenant$default'
+      type          : '(Lcom/example/data/api/RuijieApiService;Ljava/lang/String;JLjava/lang/String;IILjava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;'
+      access        : 0x1009 (PUBLIC STATIC SYNTHETIC)
+      code          -
+      registers     : 20
+      ins           : 11
+      outs          : 9
+      insns size    : 47 16-bit code units
+001188:                                        |[001188] com.example.data.api.RuijieApiService.getVoucherListTenant$default:(Lcom/example/data/api/RuijieApiService;Ljava/lang/String;JLjava/lang/String;IILjava/lang/String;Lkotlin/coroutines/Continuation;ILjava/lang/Object;)Ljava/lang/Object;
+001198: 3913 2700                              |0000: if-nez v19, 0027 // +0027
+00119c: dd00 1208                              |0002: and-int/lit8 v0, v18, #int 8 // #08
+0011a0: 3800 0500                              |0004: if-eqz v0, 0009 // +0005
+0011a4: 120e                                   |0006: const/4 v14, #int 0 // #0
+0011a6: 01e5                                   |0007: move v5, v14
+0011a8: 2802                                   |0008: goto 000a // +0002
+0011aa: 01e5                                   |0009: move v5, v14
+0011ac: dd0e 1210                              |000a: and-int/lit8 v14, v18, #int 16 // #10
+0011b0: 380e 0600                              |000c: if-eqz v14, 0012 // +0006
+0011b4: 130e c800                              |000e: const/16 v14, #int 200 // #c8
+0011b8: 01e6                                   |0010: move v6, v14
+0011ba: 2802                                   |0011: goto 0013 // +0002
+0011bc: 01f6                                   |0012: move v6, v15
+0011be: dd0e 1220                              |0013: and-int/lit8 v14, v18, #int 32 // #20
+0011c2: 380e 0500                              |0015: if-eqz v14, 001a // +0005
+0011c6: 120e                                   |0017: const/4 v14, #int 0 // #0
+0011c8: 07e7                                   |0018: move-object v7, v14
+0011ca: 2803                                   |0019: goto 001c // +0003
+0011cc: 0807 1000                              |001a: move-object/from16 v7, v16
+0011d0: 0790                                   |001c: move-object v0, v9
+0011d2: 07a1                                   |001d: move-object v1, v10
+0011d4: 04b2                                   |001e: move-wide v2, v11
+0011d6: 07d4                                   |001f: move-object v4, v13
+0011d8: 0808 1100                              |0020: move-object/from16 v8, v17
+0011dc: 7809 2700 0000                         |0022: invoke-interface/range {v0, v1, v2, v3, v4, v5, v6, v7, v8}, Lcom/example/data/api/RuijieApiService;.getVoucherListTenant:(Ljava/lang/String;JLjava/lang/String;IILjava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object; // method@0027
+0011e2: 0c09                                   |0025: move-result-object v9
+0011e4: 1109                                   |0026: return-object v9
+0011e6: 2209 1700                              |0027: new-instance v9, Ljava/lang/UnsupportedOperationException; // type@0017
+0011ea: 1a0a 7b00                              |0029: const-string v10, "Super calls with default arguments not supported in this target, function: getVoucherListTenant" // string@007b
+0011ee: 7020 3500 a900                         |002b: invoke-direct {v9, v10}, Ljava/lang/UnsupportedOperationException;.<init>:(Ljava/lang/String;)V // method@0035
+0011f4: 2709                                   |002e: throw v9
+      catches       : (none)
+      positions     :
+        0x0000 line=80
+        0x0006 line=85
+        0x0009 line=80
+        0x000e line=86
+        0x0012 line=80
+        0x0017 line=87
+        0x001a line=80
+      locals        :
+        0x0000 - 0x002f reg=9 (null) Lcom/example/data/api/RuijieApiService;
+        0x0000 - 0x002f reg=10 (null) Ljava/lang/String;
+        0x0000 - 0x002f reg=11 (null) J
+        0x0000 - 0x002f reg=13 (null) Ljava/lang/String;
+        0x0000 - 0x002f reg=14 (null) I
+        0x0000 - 0x002f reg=15 (null) I
+        0x0000 - 0x002f reg=16 (null) Ljava/lang/String;
+        0x0000 - 0x002f reg=17 (null) Lkotlin/coroutines/Continuation;
+        0x0000 - 0x002f reg=18 (null) I
+        0x0000 - 0x002f reg=19 (null) Ljava/lang/Object;
+
+  Virtual methods   -
+    #0              : (in Lcom/example/data/api/RuijieApiService;)
+      name          : 'authGlobal'
+      type          : '(Lokhttp3/RequestBody;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;'
+      access        : 0x0401 (PUBLIC ABSTRACT)
+      code          : (none)
+
+    #1              : (in Lcom/example/data/api/RuijieApiService;)
+      name          : 'authPolicy'
+      type          : '(Lokhttp3/RequestBody;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;'
+      access        : 0x0401 (PUBLIC ABSTRACT)
+      code          : (none)
+
+    #2              : (in Lcom/example/data/api/RuijieApiService;)
+      name          : 'createVoucherOpen'
+      type          : '(JLjava/lang/String;Lokhttp3/RequestBody;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;'
+      access        : 0x0401 (PUBLIC ABSTRACT)
+      code          : (none)
+
+    #3              : (in Lcom/example/data/api/RuijieApiService;)
+      name          : 'createVoucherTenant'
+      type          : '(Ljava/lang/String;JLjava/lang/String;Lokhttp3/RequestBody;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;'
+      access        : 0x0401 (PUBLIC ABSTRACT)
+      code          : (none)
+
+    #4              : (in Lcom/example/data/api/RuijieApiService;)
+      name          : 'createVoucherWeb'
+      type          : '(Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;JLjava/lang/String;Lokhttp3/RequestBody;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;'
+      access        : 0x0401 (PUBLIC ABSTRACT)
+      code          : (none)
+
+    #5              : (in Lcom/example/data/api/RuijieApiService;)
+      name          : 'deleteVoucherOpen'
+      type          : '(JLjava/lang/String;Lokhttp3/RequestBody;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;'
+      access        : 0x0401 (PUBLIC ABSTRACT)
+      code          : (none)
+
+    #6              : (in Lcom/example/data/api/RuijieApiService;)
+      name          : 'deleteVoucherOpenDel'
+      type          : '(JLjava/lang/String;Lokhttp3/RequestBody;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;'
+      access        : 0x0401 (PUBLIC ABSTRACT)
+      code          : (none)
+
+    #7              : (in Lcom/example/data/api/RuijieApiService;)
+      name          : 'deleteVoucherTenant'
+      type          : '(Ljava/lang/String;JLjava/lang/String;Lokhttp3/RequestBody;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;'
+      access        : 0x0401 (PUBLIC ABSTRACT)
+      code          : (none)
+
+    #8              : (in Lcom/example/data/api/RuijieApiService;)
+      name          : 'getAccountInfo'
+      type          : '(Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;'
+      access        : 0x0401 (PUBLIC ABSTRACT)
+      code          : (none)
+
+    #9              : (in Lcom/example/data/api/RuijieApiService;)
+      name          : 'getClientAccessToken'
+      type          : '(Ljava/lang/String;Lcom/example/data/model/RuijieTokenRequestBody;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;'
+      access        : 0x0401 (PUBLIC ABSTRACT)
+      code          : (none)
+
+    #10              : (in Lcom/example/data/api/RuijieApiService;)
+      name          : 'getGeneric'
+      type          : '(Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;'
+      access        : 0x0401 (PUBLIC ABSTRACT)
+      code          : (none)
+
+    #11              : (in Lcom/example/data/api/RuijieApiService;)
+      name          : 'getGroupSingleTree'
+      type          : '(Ljava/lang/String;Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;'
+      access        : 0x0401 (PUBLIC ABSTRACT)
+      code          : (none)
+
+    #12              : (in Lcom/example/data/api/RuijieApiService;)
+      name          : 'getPackageListOpen'
+      type          : '(JLjava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;'
+      access        : 0x0401 (PUBLIC ABSTRACT)
+      code          : (none)
+
+    #13              : (in Lcom/example/data/api/RuijieApiService;)
+      name          : 'getPackageListOpenAlt'
+      type          : '(JLjava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;'
+      access        : 0x0401 (PUBLIC ABSTRACT)
+      code          : (none)
+
+    #14              : (in Lcom/example/data/api/RuijieApiService;)
+      name          : 'getPackageListTenant'
+      type          : '(Ljava/lang/String;JLjava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;'
+      access        : 0x0401 (PUBLIC ABSTRACT)
+      code          : (none)
+
+    #15              : (in Lcom/example/data/api/RuijieApiService;)
+      name          : 'getUserGroupListIntl'
+      type          : '(JLjava/lang/String;IILkotlin/coroutines/Continuation;)Ljava/lang/Object;'
+      access        : 0x0401 (PUBLIC ABSTRACT)
+      code          : (none)
+
+    #16              : (in Lcom/example/data/api/RuijieApiService;)
+      name          : 'getVoucherListOpen'
+      type          : '(JLjava/lang/String;IILkotlin/coroutines/Continuation;)Ljava/lang/Object;'
+      access        : 0x0401 (PUBLIC ABSTRACT)
+      code          : (none)
+
+    #17              : (in Lcom/example/data/api/RuijieApiService;)
+      name          : 'getVoucherListTenant'
+      type          : '(Ljava/lang/String;JLjava/lang/String;IILjava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;'
+      access        : 0x0401 (PUBLIC ABSTRACT)
+      code          : (none)
+
+    #18              : (in Lcom/example/data/api/RuijieApiService;)
+      name          : 'postGeneric'
+      type          : '(Ljava/lang/String;Lokhttp3/RequestBody;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;'
+      access        : 0x0401 (PUBLIC ABSTRACT)
+      code          : (none)
+
+  source_file_idx   : 114 (RuijieApiService.kt)
+

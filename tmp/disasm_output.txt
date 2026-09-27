@@ -1,0 +1,1636 @@
+[010204] com.example.data.repository.RuijieRepository$loginWithCredentials$2.<init>:(Ljava/lang/String;Ljava/lang/String;Lcom/example/data/model/RuijieServer;Ljava/lang/String;Lcom/example/data/repository/RuijieRepository;Lkotlin/coroutines/Continuation;)V
+0000: iput-object v2, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.$username:Ljava/lang/String; // field@0098
+0002: iput-object v3, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.$password:Ljava/lang/String; // field@0096
+0004: iput-object v4, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.$server:Lcom/example/data/model/RuijieServer; // field@0097
+0006: iput-object v5, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.$customUrl:Ljava/lang/String; // field@0095
+0008: iput-object v6, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.this$0:Lcom/example/data/repository/RuijieRepository; // field@00b7
+000a: const/4 v0, #int 2 // #2
+000b: invoke-direct {v1, v0, v7}, Lkotlin/coroutines/jvm/internal/SuspendLambda;.<init>:(ILkotlin/coroutines/Continuation;)V // method@0291
+000e: return-void
+[0101cc] com.example.data.repository.RuijieRepository$loginWithCredentials$2.create:(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
+0000: new-instance v0, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2; // type@0064
+0002: iget-object v1, v7, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.$username:Ljava/lang/String; // field@0098
+0004: iget-object v2, v7, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.$password:Ljava/lang/String; // field@0096
+0006: iget-object v3, v7, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.$server:Lcom/example/data/model/RuijieServer; // field@0097
+0008: iget-object v4, v7, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.$customUrl:Ljava/lang/String; // field@0095
+000a: iget-object v5, v7, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.this$0:Lcom/example/data/repository/RuijieRepository; // field@00b7
+000c: move-object v6, v9
+000d: invoke-direct/range {v0, v1, v2, v3, v4, v5, v6}, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.<init>:(Ljava/lang/String;Ljava/lang/String;Lcom/example/data/model/RuijieServer;Ljava/lang/String;Lcom/example/data/repository/RuijieRepository;Lkotlin/coroutines/Continuation;)V // method@00fa
+0010: check-cast v0, Lkotlin/coroutines/Continuation; // type@00b4
+0012: return-object v0
+[00e6c0] com.example.data.repository.RuijieRepository$loginWithCredentials$2.invoke:(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+0000: check-cast v2, Lkotlinx/coroutines/CoroutineScope; // type@00cc
+0002: check-cast v3, Lkotlin/coroutines/Continuation; // type@00b4
+0004: invoke-virtual {v1, v2, v3}, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.invoke:(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/Continuation;)Ljava/lang/Object; // method@00fd
+0007: move-result-object v0
+0008: return-object v0
+[00e6e4] com.example.data.repository.RuijieRepository$loginWithCredentials$2.invoke:(Lkotlinx/coroutines/CoroutineScope;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+0000: invoke-virtual {v2, v3, v4}, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.create:(Ljava/lang/Object;Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation; // method@00fb
+0003: move-result-object v0
+0004: check-cast v0, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2; // type@0064
+0006: sget-object v1, Lkotlin/Unit;.INSTANCE:Lkotlin/Unit; // field@0178
+0008: invoke-virtual {v0, v1}, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.invokeSuspend:(Ljava/lang/Object;)Ljava/lang/Object; // method@00fe
+000b: move-result-object v0
+000c: return-object v0
+[00e710] com.example.data.repository.RuijieRepository$loginWithCredentials$2.invokeSuspend:(Ljava/lang/Object;)Ljava/lang/Object;
+0000: move-object/from16 v1, v69
+0002: const-string v0, "access_token" // string@03f6
+0004: const-string v2, "/service/api/intl/auth/v2/global/" // string@014a
+0006: const-string v3, "optString(...)" // string@061b
+0008: const-string v4, "expiresIn" // string@04de
+000a: const-string v5, "expires_in" // string@04df
+000c: invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;.getCOROUTINE_SUSPENDED:()Ljava/lang/Object; // method@028c
+000f: move-result-object v6
+0010: iget v7, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.label:I // field@00b6
+0012: const-string v8, "data" // string@0498
+0014: const-string v9, "application/json; charset=utf-8" // string@0410
+0016: const-string v10, "toString(...)" // string@06e4
+0018: const-string v11, "tenant_name" // string@06d2
+001a: const-string v12, "tenantName" // string@06d0
+001c: const-string v15, " Body: " // string@0015
+001e: const-wide/16 v16, #int 0 // #0
+0020: const-string v13, "Content-Type" // string@019d
+0022: const-string v14, "username" // string@0718
+0024: move/from16 v18, v7
+0026: const-string v7, "tenant_id" // string@06d1
+0028: move-object/from16 v20, v3
+002a: const-string v3, "tenantId" // string@06cf
+002c: move-object/from16 v21, v7
+002e: const-string v7, "RuijieAuth" // string@0352
+0030: move-object/from16 v24, v3
+0032: const-string v3, "" // string@0000
+0034: packed-switch v18, 00000c1c // +00000be8
+0037: new-instance v0, Ljava/lang/IllegalStateException; // type@0094
+0039: const-string v2, "call to 'resume' before 'invoke' with coroutine" // string@042a
+003b: invoke-direct {v0, v2}, Ljava/lang/IllegalStateException;.<init>:(Ljava/lang/String;)V // method@0245
+003e: throw v0
+003f: iget-wide v4, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.J$1:J // field@009d
+0041: iget-wide v9, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.J$0:J // field@009c
+0043: iget v2, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.I$2:I // field@009b
+0045: iget v6, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.I$1:I // field@009a
+0047: move/from16 v18, v2
+0049: iget v2, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.I$0:I // field@0099
+004b: iget-object v0, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$23:Ljava/lang/Object; // field@00ae
+004d: move-object/from16 v19, v0
+004f: check-cast v19, Ljava/lang/String; // type@009c
+0051: iget-object v0, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$22:Ljava/lang/Object; // field@00ad
+0053: move-object/from16 v22, v0
+0055: check-cast v22, Ljava/lang/String; // type@009c
+0057: iget-object v0, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$21:Ljava/lang/Object; // field@00ac
+0059: move-object/from16 v23, v0
+005b: check-cast v23, Ljava/lang/String; // type@009c
+005d: iget-object v0, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$20:Ljava/lang/Object; // field@00ab
+005f: move-object/from16 v25, v0
+0061: check-cast v25, Ljava/lang/String; // type@009c
+0063: iget-object v0, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$19:Ljava/lang/Object; // field@00a9
+0065: move-object/from16 v26, v0
+0067: check-cast v26, Ljava/lang/String; // type@009c
+0069: iget-object v0, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$18:Ljava/lang/Object; // field@00a8
+006b: move-object/from16 v27, v0
+006d: check-cast v27, Ljava/lang/String; // type@009c
+006f: iget-object v0, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$17:Ljava/lang/Object; // field@00a7
+0071: move-object/from16 v28, v0
+0073: check-cast v28, Lorg/json/JSONObject; // type@00de
+0075: iget-object v0, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$16:Ljava/lang/Object; // field@00a6
+0077: move-object/from16 v29, v0
+0079: check-cast v29, Ljava/lang/String; // type@009c
+007b: iget-object v0, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$15:Ljava/lang/Object; // field@00a5
+007d: move-object/from16 v30, v0
+007f: check-cast v30, Ljava/lang/String; // type@009c
+0081: iget-object v0, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$14:Ljava/lang/Object; // field@00a4
+0083: move-object/from16 v31, v0
+0085: check-cast v31, Lorg/json/JSONObject; // type@00de
+0087: iget-object v0, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$13:Ljava/lang/Object; // field@00a3
+0089: move-object/from16 v32, v0
+008b: check-cast v32, Ljava/lang/String; // type@009c
+008d: iget-object v0, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$12:Ljava/lang/Object; // field@00a2
+008f: move-object/from16 v33, v0
+0091: check-cast v33, Ljava/lang/String; // type@009c
+0093: iget-object v0, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$11:Ljava/lang/Object; // field@00a1
+0095: move-object/from16 v34, v0
+0097: check-cast v34, Lretrofit2/Response; // type@00df
+0099: iget-object v0, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$10:Ljava/lang/Object; // field@00a0
+009b: move-object/from16 v35, v0
+009d: check-cast v35, Lokhttp3/RequestBody; // type@00db
+009f: iget-object v0, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$9:Ljava/lang/Object; // field@00b5
+00a1: move-object/from16 v36, v0
+00a3: check-cast v36, Ljava/lang/String; // type@009c
+00a5: iget-object v0, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$8:Ljava/lang/Object; // field@00b4
+00a7: move-object/from16 v37, v0
+00a9: check-cast v37, Ljava/lang/String; // type@009c
+00ab: iget-object v0, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$7:Ljava/lang/Object; // field@00b3
+00ad: move-object/from16 v38, v0
+00af: check-cast v38, Ljava/lang/String; // type@009c
+00b1: iget-object v0, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$6:Ljava/lang/Object; // field@00b2
+00b3: move-object/from16 v39, v0
+00b5: check-cast v39, Lretrofit2/Response; // type@00df
+00b7: iget-object v0, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$5:Ljava/lang/Object; // field@00b1
+00b9: move-object/from16 v40, v0
+00bb: check-cast v40, Lokhttp3/RequestBody; // type@00db
+00bd: iget-object v0, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$4:Ljava/lang/Object; // field@00b0
+00bf: move-object/from16 v41, v0
+00c1: check-cast v41, Ljava/lang/String; // type@009c
+00c3: iget-object v0, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$3:Ljava/lang/Object; // field@00af
+00c5: move-object/from16 v42, v0
+00c7: check-cast v42, Lcom/example/data/api/RuijieApiService; // type@003f
+00c9: iget-object v0, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$2:Ljava/lang/Object; // field@00aa
+00cb: move-object/from16 v43, v0
+00cd: check-cast v43, Ljava/lang/String; // type@009c
+00cf: iget-object v0, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$1:Ljava/lang/Object; // field@009f
+00d1: move-object/from16 v44, v0
+00d3: check-cast v44, Ljava/lang/String; // type@009c
+00d5: iget-object v0, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$0:Ljava/lang/Object; // field@009e
+00d7: move-object/from16 v45, v0
+00d9: check-cast v45, Ljava/lang/String; // type@009c
+00db: invoke-static/range {v70}, Lkotlin/ResultKt;.throwOnFailure:(Ljava/lang/Object;)V // method@027a
+00de: move-object/from16 v0, v29
+00e0: move-object/from16 v29, v3
+00e2: move-object/from16 v3, v25
+00e4: move-object/from16 v25, v12
+00e6: move-object v12, v0
+00e7: move-object/from16 v0, v43
+00e9: move-object/from16 v43, v14
+00eb: move-object v14, v0
+00ec: move-object/from16 v52, v13
+00ee: move-object/from16 v0, v21
+00f0: move-object/from16 v13, v31
+00f2: move-object/from16 v31, v8
+00f4: move-object/from16 v21, v11
+00f6: move-object/from16 v11, v19
+00f8: move-object/from16 v8, v27
+00fa: move/from16 v19, v2
+00fc: move-object/from16 v27, v15
+00fe: move-object/from16 v2, v70
+0100: goto/16 0836 // +0736
+0102: move-exception v0
+0103: move/from16 v13, v18
+0105: goto/16 0b27 // +0a22
+0107: iget v9, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.I$0:I // field@0099
+0109: iget-object v10, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$10:Ljava/lang/Object; // field@00a0
+010b: check-cast v10, Lokhttp3/RequestBody; // type@00db
+010d: move/from16 v18, v9
+010f: iget-object v9, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$9:Ljava/lang/Object; // field@00b5
+0111: check-cast v9, Ljava/lang/String; // type@009c
+0113: move-object/from16 v25, v9
+0115: iget-object v9, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$8:Ljava/lang/Object; // field@00b4
+0117: check-cast v9, Ljava/lang/String; // type@009c
+0119: move-object/from16 v26, v9
+011b: iget-object v9, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$7:Ljava/lang/Object; // field@00b3
+011d: check-cast v9, Ljava/lang/String; // type@009c
+011f: move-object/from16 v27, v9
+0121: iget-object v9, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$6:Ljava/lang/Object; // field@00b2
+0123: check-cast v9, Lretrofit2/Response; // type@00df
+0125: move-object/from16 v28, v9
+0127: iget-object v9, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$5:Ljava/lang/Object; // field@00b1
+0129: check-cast v9, Lokhttp3/RequestBody; // type@00db
+012b: move-object/from16 v29, v9
+012d: iget-object v9, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$4:Ljava/lang/Object; // field@00b0
+012f: check-cast v9, Ljava/lang/String; // type@009c
+0131: move-object/from16 v30, v9
+0133: iget-object v9, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$3:Ljava/lang/Object; // field@00af
+0135: check-cast v9, Lcom/example/data/api/RuijieApiService; // type@003f
+0137: move-object/from16 v31, v9
+0139: iget-object v9, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$2:Ljava/lang/Object; // field@00aa
+013b: check-cast v9, Ljava/lang/String; // type@009c
+013d: move-object/from16 v32, v9
+013f: iget-object v9, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$1:Ljava/lang/Object; // field@009f
+0141: check-cast v9, Ljava/lang/String; // type@009c
+0143: move-object/from16 v33, v9
+0145: iget-object v9, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$0:Ljava/lang/Object; // field@009e
+0147: check-cast v9, Ljava/lang/String; // type@009c
+0149: invoke-static/range {v70}, Lkotlin/ResultKt;.throwOnFailure:(Ljava/lang/Object;)V // method@027a
+014c: move-object/from16 v35, v10
+014e: move-object/from16 v52, v13
+0150: move-object/from16 v36, v25
+0152: move-object/from16 v37, v26
+0154: move-object/from16 v38, v27
+0156: move-object/from16 v39, v28
+0158: move-object/from16 v40, v29
+015a: move-object/from16 v41, v30
+015c: move-object/from16 v44, v33
+015e: move-object/from16 v30, v2
+0160: move-object/from16 v28, v3
+0162: move-object/from16 v26, v4
+0164: move-object/from16 v27, v5
+0166: move-object/from16 v29, v8
+0168: move-object/from16 v25, v12
+016a: move/from16 v2, v18
+016c: move-object/from16 v5, v31
+016e: move-object/from16 v4, v32
+0170: move-object/from16 v31, v0
+0172: move-object/from16 v18, v11
+0174: move-object v11, v9
+0175: move-object/from16 v9, v70
+0177: goto/16 03d3 // +025c
+0179: move-exception v0
+017a: move-object/from16 v5, v31
+017c: move-object/from16 v4, v32
+017e: move-object/from16 v44, v33
+0180: goto/16 0bd5 // +0a55
+0182: move-object/from16 v18, v11
+0184: iget-object v11, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$5:Ljava/lang/Object; // field@00b1
+0186: check-cast v11, Lokhttp3/RequestBody; // type@00db
+0188: move-object/from16 v25, v11
+018a: iget-object v11, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$4:Ljava/lang/Object; // field@00b0
+018c: check-cast v11, Ljava/lang/String; // type@009c
+018e: move-object/from16 v26, v11
+0190: iget-object v11, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$3:Ljava/lang/Object; // field@00af
+0192: check-cast v11, Lcom/example/data/api/RuijieApiService; // type@003f
+0194: move-object/from16 v27, v11
+0196: iget-object v11, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$2:Ljava/lang/Object; // field@00aa
+0198: check-cast v11, Ljava/lang/String; // type@009c
+019a: move-object/from16 v28, v11
+019c: iget-object v11, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$1:Ljava/lang/Object; // field@009f
+019e: check-cast v11, Ljava/lang/String; // type@009c
+01a0: move-object/from16 v29, v11
+01a2: iget-object v11, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$0:Ljava/lang/Object; // field@009e
+01a4: check-cast v11, Ljava/lang/String; // type@009c
+01a6: invoke-static/range {v70}, Lkotlin/ResultKt;.throwOnFailure:(Ljava/lang/Object;)V // method@027a
+01a9: move-object/from16 v30, v27
+01ab: move-object/from16 v27, v5
+01ad: move-object/from16 v5, v30
+01af: move-object/from16 v31, v0
+01b1: move-object/from16 v30, v2
+01b3: move-object/from16 v0, v26
+01b5: move-object/from16 v2, v70
+01b7: move-object/from16 v26, v4
+01b9: move-object/from16 v4, v28
+01bb: move-object/from16 v28, v3
+01bd: move-object/from16 v3, v25
+01bf: move-object/from16 v25, v12
+01c1: move-object/from16 v12, v29
+01c3: move-object/from16 v29, v8
+01c5: goto/16 028f // +00ca
+01c7: move-exception v0
+01c8: move-object v9, v11
+01c9: move-object/from16 v5, v27
+01cb: move-object/from16 v4, v28
+01cd: move-object/from16 v44, v29
+01cf: goto/16 0bd5 // +0a06
+01d1: move-object/from16 v18, v11
+01d3: invoke-static/range {v70}, Lkotlin/ResultKt;.throwOnFailure:(Ljava/lang/Object;)V // method@027a
+01d6: iget-object v11, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.$username:Ljava/lang/String; // field@0098
+01d8: check-cast v11, Ljava/lang/CharSequence; // type@0090
+01da: invoke-static {v11}, Lkotlin/text/StringsKt;.trim:(Ljava/lang/CharSequence;)Ljava/lang/CharSequence; // method@02a8
+01dd: move-result-object v11
+01de: invoke-virtual {v11}, Ljava/lang/Object;.toString:()Ljava/lang/String; // method@0250
+01e1: move-result-object v11
+01e2: move-object/from16 v25, v12
+01e4: iget-object v12, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.$password:Ljava/lang/String; // field@0096
+01e6: check-cast v12, Ljava/lang/CharSequence; // type@0090
+01e8: invoke-static {v12}, Lkotlin/text/StringsKt;.trim:(Ljava/lang/CharSequence;)Ljava/lang/CharSequence; // method@02a8
+01eb: move-result-object v12
+01ec: invoke-virtual {v12}, Ljava/lang/Object;.toString:()Ljava/lang/String; // method@0250
+01ef: move-result-object v12
+01f0: move-object/from16 v26, v11
+01f2: check-cast v26, Ljava/lang/CharSequence; // type@0090
+01f4: invoke-static/range {v26}, Lkotlin/text/StringsKt;.isBlank:(Ljava/lang/CharSequence;)Z // method@02a3
+01f7: move-result v26
+01f8: if-nez v26, 0c12 // +0a1a
+01fa: move-object/from16 v26, v12
+01fc: check-cast v26, Ljava/lang/CharSequence; // type@0090
+01fe: invoke-static/range {v26}, Lkotlin/text/StringsKt;.isBlank:(Ljava/lang/CharSequence;)Z // method@02a3
+0201: move-result v26
+0202: if-eqz v26, 0206 // +0004
+0204: goto/16 0c12 // +0a0e
+0206: move-object/from16 v26, v4
+0208: iget-object v4, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.$server:Lcom/example/data/model/RuijieServer; // field@0097
+020a: move-object/from16 v27, v5
+020c: iget-object v5, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.$customUrl:Ljava/lang/String; // field@0095
+020e: invoke-virtual {v4, v5}, Lcom/example/data/model/RuijieServer;.resolveBaseUrl:(Ljava/lang/String;)Ljava/lang/String; // method@009c
+0211: move-result-object v4
+0212: iget-object v5, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.this$0:Lcom/example/data/repository/RuijieRepository; // field@00b7
+0214: invoke-static {v5}, Lcom/example/data/repository/RuijieRepository;.access$getApiClient$p:(Lcom/example/data/repository/RuijieRepository;)Lcom/example/data/api/RuijieApiClient; // method@0102
+0217: move-result-object v5
+0218: invoke-virtual {v5, v4}, Lcom/example/data/api/RuijieApiClient;.getApiService:(Ljava/lang/String;)Lcom/example/data/api/RuijieApiService; // method@005d
+021b: move-result-object v5
+021c: nop // spacer
+021d: new-instance v28, Lorg/json/JSONObject; // type@00de
+021f: invoke-direct/range {v28}, Lorg/json/JSONObject;.<init>:()V // method@02bd
+0222: move-object/from16 v29, v28
+0224: const/16 v30, #int 0 // #0
+0226: move-object/from16 v31, v0
+0228: move-object/from16 v0, v29
+022a: invoke-virtual {v0, v14, v11}, Lorg/json/JSONObject;.put:(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject; // method@02cc
+022d: move-object/from16 v29, v8
+022f: const-string v8, "account" // string@03f8
+0231: invoke-virtual {v0, v8, v11}, Lorg/json/JSONObject;.put:(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject; // method@02cc
+0234: nop // spacer
+0235: nop // spacer
+0236: invoke-virtual/range {v28}, Lorg/json/JSONObject;.toString:()Ljava/lang/String; // method@02cd
+0239: move-result-object v0
+023a: invoke-static {v0, v10}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V // method@0297
+023d: nop // spacer
+023e: sget-object v8, Lokhttp3/RequestBody;.Companion:Lokhttp3/RequestBody$Companion; // field@017d
+0240: move-object/from16 v28, v3
+0242: sget-object v3, Lokhttp3/MediaType;.Companion:Lokhttp3/MediaType$Companion; // field@017c
+0244: invoke-virtual {v3, v9}, Lokhttp3/MediaType$Companion;.get:(Ljava/lang/String;)Lokhttp3/MediaType; // method@02b4
+0247: move-result-object v3
+0248: invoke-virtual {v8, v0, v3}, Lokhttp3/RequestBody$Companion;.create:(Ljava/lang/String;Lokhttp3/MediaType;)Lokhttp3/RequestBody; // method@02b5
+024b: move-result-object v3
+024c: new-instance v8, Ljava/lang/StringBuilder; // type@009d
+024e: invoke-direct {v8}, Ljava/lang/StringBuilder;.<init>:()V // method@0255
+0251: move-object/from16 v30, v2
+0253: const-string v2, ">>> Stage 1 Policy Request: POST " // string@0175
+0255: invoke-virtual {v8, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+0258: move-result-object v2
+0259: invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+025c: move-result-object v2
+025d: const-string v8, "/service/api/intl/auth/v2/policy/ Body: " // string@014d
+025f: invoke-virtual {v2, v8}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+0262: move-result-object v2
+0263: invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+0266: move-result-object v2
+0267: invoke-virtual {v2}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@025a
+026a: move-result-object v2
+026b: invoke-static {v7, v2}, Landroid/util/Log;.d:(Ljava/lang/String;Ljava/lang/String;)I // method@0004
+026e: move-object v2, v1
+026f: check-cast v2, Lkotlin/coroutines/Continuation; // type@00b4
+0271: iput-object v11, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$0:Ljava/lang/Object; // field@009e
+0273: iput-object v12, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$1:Ljava/lang/Object; // field@009f
+0275: iput-object v4, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$2:Ljava/lang/Object; // field@00aa
+0277: iput-object v5, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$3:Ljava/lang/Object; // field@00af
+0279: invoke-static {v0}, Lkotlin/coroutines/jvm/internal/SpillingKt;.nullOutSpilledVariable:(Ljava/lang/Object;)Ljava/lang/Object; // method@0290
+027c: move-result-object v8
+027d: iput-object v8, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$4:Ljava/lang/Object; // field@00b0
+027f: invoke-static {v3}, Lkotlin/coroutines/jvm/internal/SpillingKt;.nullOutSpilledVariable:(Ljava/lang/Object;)Ljava/lang/Object; // method@0290
+0282: move-result-object v8
+0283: iput-object v8, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$5:Ljava/lang/Object; // field@00b1
+0285: const/4 v8, #int 1 // #1
+0286: iput v8, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.label:I // field@00b6
+0288: invoke-interface {v5, v3, v2}, Lcom/example/data/api/RuijieApiService;.authPolicy:(Lokhttp3/RequestBody;Lkotlin/coroutines/Continuation;)Ljava/lang/Object; // method@005f
+028b: move-result-object v2
+028c: if-ne v2, v6, 028f // +0003
+028e: return-object v6
+028f: check-cast v2, Lretrofit2/Response; // type@00df
+0291: invoke-virtual {v2}, Lretrofit2/Response;.code:()I // method@02d0
+0294: move-result v8
+0295: move-object/from16 v48, v0
+0297: invoke-virtual {v2}, Lretrofit2/Response;.headers:()Lokhttp3/Headers; // method@02d2
+029a: move-result-object v0
+029b: invoke-virtual {v0, v13}, Lokhttp3/Headers;.get:(Ljava/lang/String;)Ljava/lang/String; // method@02b3
+029e: move-result-object v0
+029f: if-nez v0, 02a3 // +0004
+02a1: move-object/from16 v0, v28
+02a3: invoke-virtual {v2}, Lretrofit2/Response;.body:()Ljava/lang/Object; // method@02cf
+02a6: move-result-object v32
+02a7: check-cast v32, Lokhttp3/ResponseBody; // type@00dc
+02a9: if-eqz v32, 02b1 // +0008
+02ab: invoke-virtual/range {v32}, Lokhttp3/ResponseBody;.string:()Ljava/lang/String; // method@02b6
+02ae: move-result-object v32
+02af: if-nez v32, 02be // +000f
+02b1: invoke-virtual {v2}, Lretrofit2/Response;.errorBody:()Lokhttp3/ResponseBody; // method@02d1
+02b4: move-result-object v32
+02b5: if-eqz v32, 02bc // +0007
+02b7: invoke-virtual/range {v32}, Lokhttp3/ResponseBody;.string:()Ljava/lang/String; // method@02b6
+02ba: move-result-object v32
+02bb: goto 02be // +0003
+02bc: move-object/from16 v32, v28
+02be: move-object/from16 v49, v32
+02c0: move-object/from16 v50, v0
+02c2: sget-object v0, Lcom/example/data/repository/RuijieRepository;.Companion:Lcom/example/data/repository/RuijieRepository$Companion; // field@00b9
+02c4: move-object/from16 v51, v2
+02c6: move-object/from16 v2, v49
+02c8: invoke-virtual {v0, v2}, Lcom/example/data/repository/RuijieRepository$Companion;.redactSensitive:(Ljava/lang/String;)Ljava/lang/String; // method@00d6
+02cb: move-result-object v0
+02cc: move-object/from16 v49, v3
+02ce: new-instance v3, Ljava/lang/StringBuilder; // type@009d
+02d0: invoke-direct {v3}, Ljava/lang/StringBuilder;.<init>:()V // method@0255
+02d3: move-object/from16 v52, v13
+02d5: const-string v13, "<<< Stage 1 Policy Response: HTTP " // string@0160
+02d7: invoke-virtual {v3, v13}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+02da: move-result-object v3
+02db: invoke-virtual {v3, v8}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@0256
+02de: move-result-object v3
+02df: invoke-virtual {v3, v15}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+02e2: move-result-object v3
+02e3: invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+02e6: move-result-object v0
+02e7: invoke-virtual {v0}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@025a
+02ea: move-result-object v0
+02eb: invoke-static {v7, v0}, Landroid/util/Log;.d:(Ljava/lang/String;Ljava/lang/String;)I // method@0004
+02ee: iget-object v0, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.this$0:Lcom/example/data/repository/RuijieRepository; // field@00b7
+02f0: invoke-static {v0}, Lcom/example/data/repository/RuijieRepository;.access$get_latestDiagnostic$p:(Lcom/example/data/repository/RuijieRepository;)Lkotlinx/coroutines/flow/MutableStateFlow; // method@0103
+02f3: move-result-object v0
+02f4: new-instance v32, Lcom/example/data/model/ApiDiagnosticRecord; // type@0045
+02f6: const-string v33, "POST" // string@0329
+02f8: iget-object v3, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.$server:Lcom/example/data/model/RuijieServer; // field@0097
+02fa: invoke-virtual {v3}, Lcom/example/data/model/RuijieServer;.getDisplayName:()Ljava/lang/String; // method@009b
+02fd: move-result-object v34
+02fe: new-instance v3, Ljava/lang/StringBuilder; // type@009d
+0300: invoke-direct {v3}, Ljava/lang/StringBuilder;.<init>:()V // method@0255
+0303: invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+0306: move-result-object v3
+0307: const-string v13, "/service/api/intl/auth/v2/policy/" // string@014c
+0309: invoke-virtual {v3, v13}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+030c: move-result-object v3
+030d: invoke-virtual {v3}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@025a
+0310: move-result-object v35
+0311: nop // spacer
+0312: nop // spacer
+0313: sget-object v3, Lcom/example/data/repository/RuijieRepository;.Companion:Lcom/example/data/repository/RuijieRepository$Companion; // field@00b9
+0315: invoke-virtual {v3, v2}, Lcom/example/data/repository/RuijieRepository$Companion;.redactSensitive:(Ljava/lang/String;)Ljava/lang/String; // method@00d6
+0318: move-result-object v43
+0319: const/16 v46, #int 3056 // #bf0
+031b: const/16 v47, #int 0 // #0
+031d: const/16 v37, #int 0 // #0
+031f: const/16 v38, #int 0 // #0
+0321: const/16 v39, #int 0 // #0
+0323: const/16 v40, #int 0 // #0
+0325: const/16 v41, #int 0 // #0
+0327: const/16 v42, #int 0 // #0
+0329: const-wide/16 v44, #int 0 // #0
+032b: move/from16 v36, v8
+032d: invoke-direct/range {v32, v33, v34, v35, v36, v37, v38, v39, v40, v41, v42, v43, v44, v45, v46, v47}, Lcom/example/data/model/ApiDiagnosticRecord;.<init>:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;JILkotlin/jvm/internal/DefaultConstructorMarker;)V // method@0078
+0330: move-object/from16 v3, v32
+0332: invoke-interface {v0, v3}, Lkotlinx/coroutines/flow/MutableStateFlow;.setValue:(Ljava/lang/Object;)V // method@02af
+0335: new-instance v0, Lorg/json/JSONObject; // type@00de
+0337: invoke-direct {v0}, Lorg/json/JSONObject;.<init>:()V // method@02bd
+033a: move-object v3, v0
+033b: const/4 v13, #int 0 // #0
+033c: invoke-virtual {v3, v14, v11}, Lorg/json/JSONObject;.put:(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject; // method@02cc
+033f: move-object/from16 v32, v0
+0341: const-string v0, "password" // string@0638
+0343: invoke-virtual {v3, v0, v12}, Lorg/json/JSONObject;.put:(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject; // method@02cc
+0346: const-string v0, "auth.password" // string@0418
+0348: invoke-virtual {v3, v0, v12}, Lorg/json/JSONObject;.put:(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject; // method@02cc
+034b: nop // spacer
+034c: nop // spacer
+034d: invoke-virtual/range {v32}, Lorg/json/JSONObject;.toString:()Ljava/lang/String; // method@02cd
+0350: move-result-object v0
+0351: invoke-static {v0, v10}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V // method@0297
+0354: nop // spacer
+0355: sget-object v3, Lokhttp3/RequestBody;.Companion:Lokhttp3/RequestBody$Companion; // field@017d
+0357: sget-object v10, Lokhttp3/MediaType;.Companion:Lokhttp3/MediaType$Companion; // field@017c
+0359: invoke-virtual {v10, v9}, Lokhttp3/MediaType$Companion;.get:(Ljava/lang/String;)Lokhttp3/MediaType; // method@02b4
+035c: move-result-object v9
+035d: invoke-virtual {v3, v0, v9}, Lokhttp3/RequestBody$Companion;.create:(Ljava/lang/String;Lokhttp3/MediaType;)Lokhttp3/RequestBody; // method@02b5
+0360: move-result-object v3
+0361: new-instance v9, Ljava/lang/StringBuilder; // type@009d
+0363: invoke-direct {v9}, Ljava/lang/StringBuilder;.<init>:()V // method@0255
+0366: const-string v10, ">>> Stage 2 Global Login Request: POST " // string@0176
+0368: invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+036b: move-result-object v9
+036c: invoke-virtual {v9, v4}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+036f: move-result-object v9
+0370: const-string v10, "/service/api/intl/auth/v2/global/ [password REDACTED]" // string@014b
+0372: invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+0375: move-result-object v9
+0376: invoke-virtual {v9}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@025a
+0379: move-result-object v9
+037a: invoke-static {v7, v9}, Landroid/util/Log;.d:(Ljava/lang/String;Ljava/lang/String;)I // method@0004
+037d: move-object v9, v1
+037e: check-cast v9, Lkotlin/coroutines/Continuation; // type@00b4
+0380: iput-object v11, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$0:Ljava/lang/Object; // field@009e
+0382: invoke-static {v12}, Lkotlin/coroutines/jvm/internal/SpillingKt;.nullOutSpilledVariable:(Ljava/lang/Object;)Ljava/lang/Object; // method@0290
+0385: move-result-object v10
+0386: iput-object v10, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$1:Ljava/lang/Object; // field@009f
+0388: iput-object v4, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$2:Ljava/lang/Object; // field@00aa
+038a: iput-object v5, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$3:Ljava/lang/Object; // field@00af
+038c: invoke-static/range {v48}, Lkotlin/coroutines/jvm/internal/SpillingKt;.nullOutSpilledVariable:(Ljava/lang/Object;)Ljava/lang/Object; // method@0290
+038f: move-result-object v10
+0390: iput-object v10, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$4:Ljava/lang/Object; // field@00b0
+0392: invoke-static/range {v49}, Lkotlin/coroutines/jvm/internal/SpillingKt;.nullOutSpilledVariable:(Ljava/lang/Object;)Ljava/lang/Object; // method@0290
+0395: move-result-object v10
+0396: iput-object v10, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$5:Ljava/lang/Object; // field@00b1
+0398: invoke-static/range {v51}, Lkotlin/coroutines/jvm/internal/SpillingKt;.nullOutSpilledVariable:(Ljava/lang/Object;)Ljava/lang/Object; // method@0290
+039b: move-result-object v10
+039c: iput-object v10, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$6:Ljava/lang/Object; // field@00b2
+039e: invoke-static/range {v50}, Lkotlin/coroutines/jvm/internal/SpillingKt;.nullOutSpilledVariable:(Ljava/lang/Object;)Ljava/lang/Object; // method@0290
+03a1: move-result-object v10
+03a2: iput-object v10, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$7:Ljava/lang/Object; // field@00b3
+03a4: invoke-static {v2}, Lkotlin/coroutines/jvm/internal/SpillingKt;.nullOutSpilledVariable:(Ljava/lang/Object;)Ljava/lang/Object; // method@0290
+03a7: move-result-object v10
+03a8: iput-object v10, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$8:Ljava/lang/Object; // field@00b4
+03aa: invoke-static {v0}, Lkotlin/coroutines/jvm/internal/SpillingKt;.nullOutSpilledVariable:(Ljava/lang/Object;)Ljava/lang/Object; // method@0290
+03ad: move-result-object v10
+03ae: iput-object v10, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$9:Ljava/lang/Object; // field@00b5
+03b0: invoke-static {v3}, Lkotlin/coroutines/jvm/internal/SpillingKt;.nullOutSpilledVariable:(Ljava/lang/Object;)Ljava/lang/Object; // method@0290
+03b3: move-result-object v10
+03b4: iput-object v10, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$10:Ljava/lang/Object; // field@00a0
+03b6: iput v8, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.I$0:I // field@0099
+03b8: const/4 v10, #int 2 // #2
+03b9: iput v10, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.label:I // field@00b6
+03bb: invoke-interface {v5, v3, v9}, Lcom/example/data/api/RuijieApiService;.authGlobal:(Lokhttp3/RequestBody;Lkotlin/coroutines/Continuation;)Ljava/lang/Object; // method@005e
+03be: move-result-object v9
+03bf: if-ne v9, v6, 03c2 // +0003
+03c1: return-object v6
+03c2: move-object/from16 v36, v0
+03c4: move-object/from16 v37, v2
+03c6: move-object/from16 v35, v3
+03c8: move v2, v8
+03c9: move-object/from16 v44, v12
+03cb: move-object/from16 v41, v48
+03cd: move-object/from16 v40, v49
+03cf: move-object/from16 v38, v50
+03d1: move-object/from16 v39, v51
+03d3: check-cast v9, Lretrofit2/Response; // type@00df
+03d5: move-object/from16 v34, v9
+03d7: invoke-virtual/range {v34}, Lretrofit2/Response;.code:()I // method@02d0
+03da: move-result v0
+03db: move v3, v0
+03dc: invoke-virtual/range {v34}, Lretrofit2/Response;.headers:()Lokhttp3/Headers; // method@02d2
+03df: move-result-object v0
+03e0: move-object/from16 v8, v52
+03e2: invoke-virtual {v0, v8}, Lokhttp3/Headers;.get:(Ljava/lang/String;)Ljava/lang/String; // method@02b3
+03e5: move-result-object v0
+03e6: if-nez v0, 03ea // +0004
+03e8: move-object/from16 v0, v28
+03ea: move-object v9, v0
+03eb: invoke-virtual/range {v34}, Lretrofit2/Response;.body:()Ljava/lang/Object; // method@02cf
+03ee: move-result-object v0
+03ef: check-cast v0, Lokhttp3/ResponseBody; // type@00dc
+03f1: if-eqz v0, 03fe // +000d
+03f3: invoke-virtual {v0}, Lokhttp3/ResponseBody;.string:()Ljava/lang/String; // method@02b6
+03f6: move-result-object v0
+03f7: if-nez v0, 040b // +0014
+03f9: goto 03fe // +0005
+03fa: move-exception v0
+03fb: move-object v9, v11
+03fc: goto/16 0bd5 // +07d9
+03fe: invoke-virtual/range {v34}, Lretrofit2/Response;.errorBody:()Lokhttp3/ResponseBody; // method@02d1
+0401: move-result-object v0
+0402: if-eqz v0, 0409 // +0007
+0404: invoke-virtual {v0}, Lokhttp3/ResponseBody;.string:()Ljava/lang/String; // method@02b6
+0407: move-result-object v0
+0408: goto 040b // +0003
+0409: move-object/from16 v0, v28
+040b: move-object v10, v0
+040c: sget-object v0, Lcom/example/data/repository/RuijieRepository;.Companion:Lcom/example/data/repository/RuijieRepository$Companion; // field@00b9
+040e: invoke-virtual {v0, v10}, Lcom/example/data/repository/RuijieRepository$Companion;.redactSensitive:(Ljava/lang/String;)Ljava/lang/String; // method@00d6
+0411: move-result-object v0
+0412: new-instance v12, Ljava/lang/StringBuilder; // type@009d
+0414: invoke-direct {v12}, Ljava/lang/StringBuilder;.<init>:()V // method@0255
+0417: const-string v13, "<<< Stage 2 Global Login Response: HTTP " // string@0161
+0419: invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+041c: move-result-object v12
+041d: invoke-virtual {v12, v3}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@0256
+0420: move-result-object v12
+0421: invoke-virtual {v12, v15}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+0424: move-result-object v12
+0425: invoke-virtual {v12, v0}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+0428: move-result-object v0
+0429: invoke-virtual {v0}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@025a
+042c: move-result-object v0
+042d: invoke-static {v7, v0}, Landroid/util/Log;.d:(Ljava/lang/String;Ljava/lang/String;)I // method@0004
+0430: iget-object v0, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.this$0:Lcom/example/data/repository/RuijieRepository; // field@00b7
+0432: invoke-static {v0}, Lcom/example/data/repository/RuijieRepository;.access$get_latestDiagnostic$p:(Lcom/example/data/repository/RuijieRepository;)Lkotlinx/coroutines/flow/MutableStateFlow; // method@0103
+0435: move-result-object v0
+0436: new-instance v53, Lcom/example/data/model/ApiDiagnosticRecord; // type@0045
+0438: const-string v54, "POST" // string@0329
+043a: iget-object v12, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.$server:Lcom/example/data/model/RuijieServer; // field@0097
+043c: invoke-virtual {v12}, Lcom/example/data/model/RuijieServer;.getDisplayName:()Ljava/lang/String; // method@009b
+043f: move-result-object v55
+0440: new-instance v12, Ljava/lang/StringBuilder; // type@009d
+0442: invoke-direct {v12}, Ljava/lang/StringBuilder;.<init>:()V // method@0255
+0445: invoke-virtual {v12, v4}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+0448: move-result-object v12
+0449: move-object/from16 v13, v30
+044b: invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+044e: move-result-object v12
+044f: invoke-virtual {v12}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@025a
+0452: move-result-object v56
+0453: nop // spacer
+0454: nop // spacer
+0455: sget-object v12, Lcom/example/data/repository/RuijieRepository;.Companion:Lcom/example/data/repository/RuijieRepository$Companion; // field@00b9
+0457: invoke-virtual {v12, v10}, Lcom/example/data/repository/RuijieRepository$Companion;.redactSensitive:(Ljava/lang/String;)Ljava/lang/String; // method@00d6
+045a: move-result-object v64
+045b: const/16 v67, #int 3056 // #bf0
+045d: const/16 v68, #int 0 // #0
+045f: const/16 v58, #int 0 // #0
+0461: const/16 v59, #int 0 // #0
+0463: const/16 v60, #int 0 // #0
+0465: const/16 v61, #int 0 // #0
+0467: const/16 v62, #int 0 // #0
+0469: const/16 v63, #int 0 // #0
+046b: const-wide/16 v65, #int 0 // #0
+046d: move/from16 v57, v3
+046f: invoke-direct/range {v53, v54, v55, v56, v57, v58, v59, v60, v61, v62, v63, v64, v65, v66, v67, v68}, Lcom/example/data/model/ApiDiagnosticRecord;.<init>:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;JILkotlin/jvm/internal/DefaultConstructorMarker;)V // method@0078
+0472: move-object/from16 v12, v53
+0474: invoke-interface {v0, v12}, Lkotlinx/coroutines/flow/MutableStateFlow;.setValue:(Ljava/lang/Object;)V // method@02af
+0477: iget-object v0, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.this$0:Lcom/example/data/repository/RuijieRepository; // field@00b7
+0479: nop // spacer
+047a: nop // spacer
+047b: nop // spacer
+047c: new-instance v12, Ljava/lang/StringBuilder; // type@009d
+047e: invoke-direct {v12}, Ljava/lang/StringBuilder;.<init>:()V // method@0255
+0481: invoke-virtual {v12, v4}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+0484: move-result-object v12
+0485: invoke-virtual {v12, v13}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+0488: move-result-object v12
+0489: invoke-virtual {v12}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@025a
+048c: move-result-object v12
+048d: invoke-static {v0, v10, v3, v9, v12}, Lcom/example/data/repository/RuijieRepository;.access$parseJsonObjectSafely:(Lcom/example/data/repository/RuijieRepository;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)Lkotlin/Pair; // method@0107
+0490: move-result-object v0
+0491: invoke-virtual {v0}, Lkotlin/Pair;.component1:()Ljava/lang/Object; // method@0273
+0494: move-result-object v12
+0495: check-cast v12, Lorg/json/JSONObject; // type@00de
+0497: invoke-virtual {v0}, Lkotlin/Pair;.component2:()Ljava/lang/Object; // method@0274
+049a: move-result-object v0
+049b: check-cast v0, Ljava/lang/String; // type@009c
+049d: move-object/from16 v30, v0
+049f: if-nez v12, 04d7 // +0038
+04a1: if-nez v30, 04b7 // +0016
+04a3: new-instance v0, Ljava/lang/StringBuilder; // type@009d
+04a5: invoke-direct {v0}, Ljava/lang/StringBuilder;.<init>:()V // method@0255
+04a8: const-string v6, "Ruijie authentication returned HTTP " // string@034f
+04aa: invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+04ad: move-result-object v0
+04ae: invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@0256
+04b1: move-result-object v0
+04b2: invoke-virtual {v0}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@025a
+04b5: move-result-object v0
+04b6: goto 04b9 // +0003
+04b7: move-object/from16 v0, v30
+04b9: new-instance v6, Ljava/lang/StringBuilder; // type@009d
+04bb: invoke-direct {v6}, Ljava/lang/StringBuilder;.<init>:()V // method@0255
+04be: const-string v8, "Login failed: " // string@0309
+04c0: invoke-virtual {v6, v8}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+04c3: move-result-object v6
+04c4: invoke-virtual {v6, v0}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+04c7: move-result-object v6
+04c8: invoke-virtual {v6}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@025a
+04cb: move-result-object v6
+04cc: invoke-static {v7, v6}, Landroid/util/Log;.e:(Ljava/lang/String;Ljava/lang/String;)I // method@0005
+04cf: new-instance v6, Lcom/example/data/repository/ApiResult$Error; // type@0055
+04d1: const/4 v8, #int 2 // #2
+04d2: const/4 v13, #int 0 // #0
+04d3: invoke-direct {v6, v0, v13, v8, v13}, Lcom/example/data/repository/ApiResult$Error;.<init>:(Ljava/lang/String;Ljava/lang/Throwable;ILkotlin/jvm/internal/DefaultConstructorMarker;)V // method@00af
+04d6: return-object v6
+04d7: const-string v0, "code" // string@043c
+04d9: invoke-virtual/range {v34}, Lretrofit2/Response;.isSuccessful:()Z // method@02d3
+04dc: move-result v13
+04dd: const/16 v32, #int 0 // #0
+04df: if-eqz v13, 04e4 // +0005
+04e1: move/from16 v13, v32
+04e3: goto 04e5 // +0002
+04e4: const/4 v13, #int -1 // #ff
+04e5: invoke-virtual {v12, v0, v13}, Lorg/json/JSONObject;.optInt:(Ljava/lang/String;I)I // method@02c3
+04e8: move-result v0
+04e9: move v13, v0
+04ea: const-string v0, "msg" // string@05f9
+04ec: move-object/from16 v33, v9
+04ee: const-string v9, "message" // string@05f6
+04f0: move-object/from16 v42, v10
+04f2: move-object/from16 v10, v28
+04f4: invoke-virtual {v12, v9, v10}, Lorg/json/JSONObject;.optString:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; // method@02c9
+04f7: move-result-object v9
+04f8: invoke-virtual {v12, v0, v9}, Lorg/json/JSONObject;.optString:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; // method@02c9
+04fb: move-result-object v0
+04fc: move-object v9, v0
+04fd: move-object/from16 v0, v29
+04ff: invoke-virtual {v12, v0}, Lorg/json/JSONObject;.optJSONObject:(Ljava/lang/String;)Lorg/json/JSONObject; // method@02c5
+0502: move-result-object v28
+0503: move-object/from16 v29, v28
+0505: move-object/from16 v28, v9
+0507: move-object/from16 v9, v31
+0509: invoke-virtual {v12, v9}, Lorg/json/JSONObject;.optString:(Ljava/lang/String;)Ljava/lang/String; // method@02c8
+050c: move-result-object v31
+050d: check-cast v31, Ljava/lang/CharSequence; // type@0090
+050f: invoke-static/range {v31}, Lkotlin/text/StringsKt;.isBlank:(Ljava/lang/CharSequence;)Z // method@02a3
+0512: move-result v43
+0513: if-eqz v43, 0522 // +000f
+0515: const/16 v31, #int 0 // #0
+0517: move-object/from16 v43, v14
+0519: const-string v14, "accessToken" // string@03f5
+051b: invoke-virtual {v12, v14}, Lorg/json/JSONObject;.optString:(Ljava/lang/String;)Ljava/lang/String; // method@02c8
+051e: move-result-object v14
+051f: move-object/from16 v31, v14
+0521: goto 0524 // +0003
+0522: move-object/from16 v43, v14
+0524: check-cast v31, Ljava/lang/CharSequence; // type@0090
+0526: invoke-static/range {v31}, Lkotlin/text/StringsKt;.isBlank:(Ljava/lang/CharSequence;)Z // method@02a3
+0529: move-result v14
+052a: if-eqz v14, 0537 // +000d
+052c: const/4 v14, #int 0 // #0
+052d: move/from16 v31, v14
+052f: const-string v14, "token" // string@06e6
+0531: invoke-virtual {v12, v14}, Lorg/json/JSONObject;.optString:(Ljava/lang/String;)Ljava/lang/String; // method@02c8
+0534: move-result-object v14
+0535: move-object/from16 v31, v14
+0537: check-cast v31, Ljava/lang/CharSequence; // type@0090
+0539: invoke-static/range {v31}, Lkotlin/text/StringsKt;.isBlank:(Ljava/lang/CharSequence;)Z // method@02a3
+053c: move-result v14
+053d: if-eqz v14, 0557 // +001a
+053f: const/4 v14, #int 0 // #0
+0540: if-eqz v29, 0550 // +0010
+0542: move/from16 v31, v14
+0544: move-object/from16 v14, v29
+0546: invoke-virtual {v14, v9}, Lorg/json/JSONObject;.optString:(Ljava/lang/String;)Ljava/lang/String; // method@02c8
+0549: move-result-object v9
+054a: if-nez v9, 054d // +0003
+054c: goto 0554 // +0008
+054d: move-object/from16 v31, v9
+054f: goto 0559 // +000a
+0550: move/from16 v31, v14
+0552: move-object/from16 v14, v29
+0554: move-object/from16 v31, v10
+0556: goto 0559 // +0003
+0557: move-object/from16 v14, v29
+0559: check-cast v31, Ljava/lang/CharSequence; // type@0090
+055b: invoke-static/range {v31}, Lkotlin/text/StringsKt;.isBlank:(Ljava/lang/CharSequence;)Z // method@02a3
+055e: move-result v9
+055f: if-eqz v9, 0576 // +0017
+0561: const/4 v9, #int 0 // #0
+0562: if-eqz v14, 0572 // +0010
+0564: move/from16 v29, v9
+0566: const-string v9, "accessToken" // string@03f5
+0568: invoke-virtual {v14, v9}, Lorg/json/JSONObject;.optString:(Ljava/lang/String;)Ljava/lang/String; // method@02c8
+056b: move-result-object v9
+056c: if-nez v9, 056f // +0003
+056e: goto 0574 // +0006
+056f: move-object/from16 v31, v9
+0571: goto 0576 // +0005
+0572: move/from16 v29, v9
+0574: move-object/from16 v31, v10
+0576: check-cast v31, Ljava/lang/CharSequence; // type@0090
+0578: invoke-static/range {v31}, Lkotlin/text/StringsKt;.isBlank:(Ljava/lang/CharSequence;)Z // method@02a3
+057b: move-result v9
+057c: if-eqz v9, 0593 // +0017
+057e: const/4 v9, #int 0 // #0
+057f: if-eqz v14, 058f // +0010
+0581: move/from16 v29, v9
+0583: const-string v9, "token" // string@06e6
+0585: invoke-virtual {v14, v9}, Lorg/json/JSONObject;.optString:(Ljava/lang/String;)Ljava/lang/String; // method@02c8
+0588: move-result-object v9
+0589: if-nez v9, 058c // +0003
+058b: goto 0591 // +0006
+058c: move-object/from16 v31, v9
+058e: goto 0593 // +0005
+058f: move/from16 v29, v9
+0591: move-object/from16 v31, v10
+0593: check-cast v31, Ljava/lang/String; // type@009c
+0595: move-object/from16 v9, v31
+0597: move-object/from16 v29, v10
+0599: const-string v10, "refresh_token" // string@066a
+059b: invoke-virtual {v12, v10}, Lorg/json/JSONObject;.optString:(Ljava/lang/String;)Ljava/lang/String; // method@02c8
+059e: move-result-object v10
+059f: check-cast v10, Ljava/lang/CharSequence; // type@0090
+05a1: invoke-static {v10}, Lkotlin/text/StringsKt;.isBlank:(Ljava/lang/CharSequence;)Z // method@02a3
+05a4: move-result v31
+05a5: if-eqz v31, 05b0 // +000b
+05a7: const/4 v10, #int 0 // #0
+05a8: move/from16 v31, v10
+05aa: const-string v10, "refreshToken" // string@0669
+05ac: invoke-virtual {v12, v10}, Lorg/json/JSONObject;.optString:(Ljava/lang/String;)Ljava/lang/String; // method@02c8
+05af: move-result-object v10
+05b0: check-cast v10, Ljava/lang/CharSequence; // type@0090
+05b2: invoke-static {v10}, Lkotlin/text/StringsKt;.isBlank:(Ljava/lang/CharSequence;)Z // method@02a3
+05b5: move-result v31
+05b6: if-eqz v31, 05ca // +0014
+05b8: const/4 v10, #int 0 // #0
+05b9: if-eqz v14, 05c6 // +000d
+05bb: move/from16 v31, v10
+05bd: const-string v10, "refresh_token" // string@066a
+05bf: invoke-virtual {v14, v10}, Lorg/json/JSONObject;.optString:(Ljava/lang/String;)Ljava/lang/String; // method@02c8
+05c2: move-result-object v10
+05c3: if-nez v10, 05ca // +0007
+05c5: goto 05c8 // +0003
+05c6: move/from16 v31, v10
+05c8: move-object/from16 v10, v29
+05ca: check-cast v10, Ljava/lang/CharSequence; // type@0090
+05cc: invoke-static {v10}, Lkotlin/text/StringsKt;.isBlank:(Ljava/lang/CharSequence;)Z // method@02a3
+05cf: move-result v31
+05d0: if-eqz v31, 05e4 // +0014
+05d2: const/4 v10, #int 0 // #0
+05d3: if-eqz v14, 05e0 // +000d
+05d5: move/from16 v31, v10
+05d7: const-string v10, "refreshToken" // string@0669
+05d9: invoke-virtual {v14, v10}, Lorg/json/JSONObject;.optString:(Ljava/lang/String;)Ljava/lang/String; // method@02c8
+05dc: move-result-object v10
+05dd: if-nez v10, 05e4 // +0007
+05df: goto 05e2 // +0003
+05e0: move/from16 v31, v10
+05e2: move-object/from16 v10, v29
+05e4: check-cast v10, Ljava/lang/String; // type@009c
+05e6: nop // spacer
+05e7: move-object/from16 v31, v0
+05e9: move-object/from16 v0, v27
+05eb: invoke-virtual {v12, v0}, Lorg/json/JSONObject;.has:(Ljava/lang/String;)Z // method@02bf
+05ee: move-result v27
+05ef: if-eqz v27, 05fe // +000f
+05f1: invoke-virtual {v12, v0}, Lorg/json/JSONObject;.optLong:(Ljava/lang/String;)J // method@02c6
+05f4: move-result-wide v26
+05f5: move-object/from16 v52, v8
+05f7: move-wide/from16 v45, v26
+05f9: move-object/from16 v26, v6
+05fb: move-object/from16 v27, v15
+05fd: goto 0643 // +0046
+05fe: move-object/from16 v27, v15
+0600: move-object/from16 v15, v26
+0602: invoke-virtual {v12, v15}, Lorg/json/JSONObject;.has:(Ljava/lang/String;)Z // method@02bf
+0605: move-result v26
+0606: if-eqz v26, 0611 // +000b
+0608: invoke-virtual {v12, v15}, Lorg/json/JSONObject;.optLong:(Ljava/lang/String;)J // method@02c6
+060b: move-result-wide v45
+060c: move-object/from16 v26, v6
+060e: move-object/from16 v52, v8
+0610: goto 0643 // +0033
+0611: if-eqz v14, 0620 // +000f
+0613: move-object/from16 v52, v8
+0615: invoke-virtual {v14, v0}, Lorg/json/JSONObject;.has:(Ljava/lang/String;)Z // method@02bf
+0618: move-result v8
+0619: move-object/from16 v26, v6
+061b: const/4 v6, #int 1 // #1
+061c: if-ne v8, v6, 0624 // +0008
+061e: const/4 v6, #int 1 // #1
+061f: goto 0626 // +0007
+0620: move-object/from16 v26, v6
+0622: move-object/from16 v52, v8
+0624: move/from16 v6, v32
+0626: if-eqz v6, 062d // +0007
+0628: invoke-virtual {v14, v0}, Lorg/json/JSONObject;.optLong:(Ljava/lang/String;)J // method@02c6
+062b: move-result-wide v45
+062c: goto 0643 // +0017
+062d: if-eqz v14, 0638 // +000b
+062f: invoke-virtual {v14, v15}, Lorg/json/JSONObject;.has:(Ljava/lang/String;)Z // method@02bf
+0632: move-result v0
+0633: const/4 v6, #int 1 // #1
+0634: if-ne v0, v6, 0638 // +0004
+0636: const/4 v0, #int 1 // #1
+0637: goto 063a // +0003
+0638: move/from16 v0, v32
+063a: if-eqz v0, 0641 // +0007
+063c: invoke-virtual {v14, v15}, Lorg/json/JSONObject;.optLong:(Ljava/lang/String;)J // method@02c6
+063f: move-result-wide v45
+0640: goto 0643 // +0003
+0641: const-wide/16 v45, #int 7200 // #1c20
+0643: move-wide/from16 v47, v45
+0645: move-object/from16 v0, v25
+0647: invoke-virtual {v12, v0}, Lorg/json/JSONObject;.optString:(Ljava/lang/String;)Ljava/lang/String; // method@02c8
+064a: move-result-object v6
+064b: check-cast v6, Ljava/lang/CharSequence; // type@0090
+064d: invoke-static {v6}, Lkotlin/text/StringsKt;.isBlank:(Ljava/lang/CharSequence;)Z // method@02a3
+0650: move-result v8
+0651: if-eqz v8, 065c // +000b
+0653: const/4 v6, #int 0 // #0
+0654: move-object/from16 v8, v18
+0656: invoke-virtual {v12, v8}, Lorg/json/JSONObject;.optString:(Ljava/lang/String;)Ljava/lang/String; // method@02c8
+0659: move-result-object v15
+065a: move-object v6, v15
+065b: goto 065e // +0003
+065c: move-object/from16 v8, v18
+065e: check-cast v6, Ljava/lang/CharSequence; // type@0090
+0660: invoke-static {v6}, Lkotlin/text/StringsKt;.isBlank:(Ljava/lang/CharSequence;)Z // method@02a3
+0663: move-result v15
+0664: if-eqz v15, 0674 // +0010
+0666: const/4 v6, #int 0 // #0
+0667: if-eqz v14, 0672 // +000b
+0669: invoke-virtual {v14, v0}, Lorg/json/JSONObject;.optString:(Ljava/lang/String;)Ljava/lang/String; // method@02c8
+066c: move-result-object v15
+066d: if-nez v15, 0670 // +0003
+066f: goto 0672 // +0003
+0670: move-object v6, v15
+0671: goto 0674 // +0003
+0672: move-object/from16 v6, v29
+0674: check-cast v6, Ljava/lang/CharSequence; // type@0090
+0676: invoke-static {v6}, Lkotlin/text/StringsKt;.isBlank:(Ljava/lang/CharSequence;)Z // method@02a3
+0679: move-result v15
+067a: if-eqz v15, 068a // +0010
+067c: const/4 v6, #int 0 // #0
+067d: if-eqz v14, 0688 // +000b
+067f: invoke-virtual {v14, v8}, Lorg/json/JSONObject;.optString:(Ljava/lang/String;)Ljava/lang/String; // method@02c8
+0682: move-result-object v15
+0683: if-nez v15, 0686 // +0003
+0685: goto 0688 // +0003
+0686: move-object v6, v15
+0687: goto 068a // +0003
+0688: move-object/from16 v6, v29
+068a: check-cast v6, Ljava/lang/String; // type@009c
+068c: nop // spacer
+068d: move-object/from16 v15, v24
+068f: invoke-virtual {v12, v15}, Lorg/json/JSONObject;.has:(Ljava/lang/String;)Z // method@02bf
+0692: move-result v18
+0693: if-eqz v18, 06a2 // +000f
+0695: invoke-virtual {v12, v15}, Lorg/json/JSONObject;.optLong:(Ljava/lang/String;)J // method@02c6
+0698: move-result-wide v23
+0699: move-object/from16 v25, v0
+069b: move-object/from16 v18, v12
+069d: move-object/from16 v0, v21
+069f: move-object/from16 v21, v8
+06a1: goto 06e5 // +0044
+06a2: move-object/from16 v25, v0
+06a4: move-object/from16 v0, v21
+06a6: invoke-virtual {v12, v0}, Lorg/json/JSONObject;.has:(Ljava/lang/String;)Z // method@02bf
+06a9: move-result v18
+06aa: if-eqz v18, 06b5 // +000b
+06ac: invoke-virtual {v12, v0}, Lorg/json/JSONObject;.optLong:(Ljava/lang/String;)J // method@02c6
+06af: move-result-wide v23
+06b0: move-object/from16 v21, v8
+06b2: move-object/from16 v18, v12
+06b4: goto 06e5 // +0031
+06b5: if-eqz v14, 06c4 // +000f
+06b7: move-object/from16 v18, v12
+06b9: invoke-virtual {v14, v15}, Lorg/json/JSONObject;.has:(Ljava/lang/String;)Z // method@02bf
+06bc: move-result v12
+06bd: move-object/from16 v21, v8
+06bf: const/4 v8, #int 1 // #1
+06c0: if-ne v12, v8, 06c8 // +0008
+06c2: const/4 v8, #int 1 // #1
+06c3: goto 06ca // +0007
+06c4: move-object/from16 v21, v8
+06c6: move-object/from16 v18, v12
+06c8: move/from16 v8, v32
+06ca: if-eqz v8, 06d1 // +0007
+06cc: invoke-virtual {v14, v15}, Lorg/json/JSONObject;.optLong:(Ljava/lang/String;)J // method@02c6
+06cf: move-result-wide v23
+06d0: goto 06e5 // +0015
+06d1: if-eqz v14, 06dc // +000b
+06d3: invoke-virtual {v14, v0}, Lorg/json/JSONObject;.has:(Ljava/lang/String;)Z // method@02bf
+06d6: move-result v8
+06d7: const/4 v12, #int 1 // #1
+06d8: if-ne v8, v12, 06dc // +0004
+06da: move/from16 v32, v12
+06dc: if-eqz v32, 06e3 // +0007
+06de: invoke-virtual {v14, v0}, Lorg/json/JSONObject;.optLong:(Ljava/lang/String;)J // method@02c6
+06e1: move-result-wide v23
+06e2: goto 06e5 // +0003
+06e3: move-wide/from16 v23, v16
+06e5: move-wide/from16 v45, v23
+06e7: invoke-static {v9}, Lkotlin/jvm/internal/Intrinsics;.checkNotNull:(Ljava/lang/Object;)V // method@0295
+06ea: move-object v8, v9
+06eb: check-cast v8, Ljava/lang/CharSequence; // type@0090
+06ed: invoke-static {v8}, Lkotlin/text/StringsKt;.isBlank:(Ljava/lang/CharSequence;)Z // method@02a3
+06f0: move-result v8
+06f1: if-eqz v8, 0743 // +0052
+06f3: invoke-static/range {v28}, Lkotlin/jvm/internal/Intrinsics;.checkNotNull:(Ljava/lang/Object;)V // method@0295
+06f6: move-object/from16 v0, v28
+06f8: check-cast v0, Ljava/lang/CharSequence; // type@0090
+06fa: invoke-static {v0}, Lkotlin/text/StringsKt;.isBlank:(Ljava/lang/CharSequence;)Z // method@02a3
+06fd: move-result v0
+06fe: if-nez v0, 0703 // +0005
+0700: move-object/from16 v0, v28
+0702: goto 0726 // +0024
+0703: new-instance v0, Ljava/lang/StringBuilder; // type@009d
+0705: invoke-direct {v0}, Ljava/lang/StringBuilder;.<init>:()V // method@0255
+0708: const-string v8, "Login failed (code: " // string@0308
+070a: invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+070d: move-result-object v0
+070e: invoke-virtual {v0, v13}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@0256
+0711: move-result-object v0
+0712: const-string v8, ", HTTP " // string@0140
+0714: invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+0717: move-result-object v0
+0718: invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@0256
+071b: move-result-object v0
+071c: const-string v8, ")" // string@0134
+071e: invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+0721: move-result-object v0
+0722: invoke-virtual {v0}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@025a
+0725: move-result-object v0
+0726: new-instance v8, Lcom/example/data/repository/ApiResult$Error; // type@0055
+0728: new-instance v12, Ljava/lang/StringBuilder; // type@009d
+072a: invoke-direct {v12}, Ljava/lang/StringBuilder;.<init>:()V // method@0255
+072d: const-string v15, "Ruijie Cloud: " // string@0349
+072f: invoke-virtual {v12, v15}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+0732: move-result-object v12
+0733: invoke-virtual {v12, v0}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+0736: move-result-object v12
+0737: invoke-virtual {v12}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@025a
+073a: move-result-object v12
+073b: move-object/from16 v16, v0
+073d: const/4 v0, #int 0 // #0
+073e: const/4 v15, #int 2 // #2
+073f: invoke-direct {v8, v12, v0, v15, v0}, Lcom/example/data/repository/ApiResult$Error;.<init>:(Ljava/lang/String;Ljava/lang/Throwable;ILkotlin/jvm/internal/DefaultConstructorMarker;)V // method@00af
+0742: return-object v8
+0743: move-object/from16 v8, v29
+0745: move-object/from16 v12, v29
+0747: move-object/from16 v19, v29
+0749: nop // spacer
+074a: move-object/from16 v22, v14
+074c: new-instance v14, Ljava/lang/StringBuilder; // type@009d
+074e: invoke-direct {v14}, Ljava/lang/StringBuilder;.<init>:()V // method@0255
+0751: move-object/from16 v24, v15
+0753: const-string v15, ">>> Stage 3 Account Info Request: GET " // string@0177
+0755: invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+0758: move-result-object v14
+0759: invoke-virtual {v14, v4}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+075c: move-result-object v14
+075d: const-string v15, "/service/api/org/account/info [Authorization: Bearer ********]" // string@0158
+075f: invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+0762: move-result-object v14
+0763: invoke-virtual {v14}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@025a
+0766: move-result-object v14
+0767: invoke-static {v7, v14}, Landroid/util/Log;.d:(Ljava/lang/String;Ljava/lang/String;)I // method@0004
+076a: new-instance v14, Ljava/lang/StringBuilder; // type@009d
+076c: invoke-direct {v14}, Ljava/lang/StringBuilder;.<init>:()V // method@0255
+076f: const-string v15, "Bearer " // string@0187
+0771: invoke-virtual {v14, v15}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+0774: move-result-object v14
+0775: invoke-virtual {v14, v9}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+0778: move-result-object v14
+0779: invoke-virtual {v14}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@025a
+077c: move-result-object v14
+077d: move-object v15, v1
+077e: check-cast v15, Lkotlin/coroutines/Continuation; // type@00b4
+0780: iput-object v11, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$0:Ljava/lang/Object; // field@009e
+0782: move-object/from16 v23, v11
+0784: invoke-static/range {v44}, Lkotlin/coroutines/jvm/internal/SpillingKt;.nullOutSpilledVariable:(Ljava/lang/Object;)Ljava/lang/Object; // method@0290
+0787: move-result-object v11
+0788: iput-object v11, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$1:Ljava/lang/Object; // field@009f
+078a: iput-object v4, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$2:Ljava/lang/Object; // field@00aa
+078c: invoke-static {v5}, Lkotlin/coroutines/jvm/internal/SpillingKt;.nullOutSpilledVariable:(Ljava/lang/Object;)Ljava/lang/Object; // method@0290
+078f: move-result-object v11
+0790: iput-object v11, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$3:Ljava/lang/Object; // field@00af
+0792: invoke-static/range {v41}, Lkotlin/coroutines/jvm/internal/SpillingKt;.nullOutSpilledVariable:(Ljava/lang/Object;)Ljava/lang/Object; // method@0290
+0795: move-result-object v11
+0796: iput-object v11, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$4:Ljava/lang/Object; // field@00b0
+0798: invoke-static/range {v40}, Lkotlin/coroutines/jvm/internal/SpillingKt;.nullOutSpilledVariable:(Ljava/lang/Object;)Ljava/lang/Object; // method@0290
+079b: move-result-object v11
+079c: iput-object v11, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$5:Ljava/lang/Object; // field@00b1
+079e: invoke-static/range {v39}, Lkotlin/coroutines/jvm/internal/SpillingKt;.nullOutSpilledVariable:(Ljava/lang/Object;)Ljava/lang/Object; // method@0290
+07a1: move-result-object v11
+07a2: iput-object v11, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$6:Ljava/lang/Object; // field@00b2
+07a4: invoke-static/range {v38}, Lkotlin/coroutines/jvm/internal/SpillingKt;.nullOutSpilledVariable:(Ljava/lang/Object;)Ljava/lang/Object; // method@0290
+07a7: move-result-object v11
+07a8: iput-object v11, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$7:Ljava/lang/Object; // field@00b3
+07aa: invoke-static/range {v37}, Lkotlin/coroutines/jvm/internal/SpillingKt;.nullOutSpilledVariable:(Ljava/lang/Object;)Ljava/lang/Object; // method@0290
+07ad: move-result-object v11
+07ae: iput-object v11, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$8:Ljava/lang/Object; // field@00b4
+07b0: invoke-static/range {v36}, Lkotlin/coroutines/jvm/internal/SpillingKt;.nullOutSpilledVariable:(Ljava/lang/Object;)Ljava/lang/Object; // method@0290
+07b3: move-result-object v11
+07b4: iput-object v11, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$9:Ljava/lang/Object; // field@00b5
+07b6: invoke-static/range {v35}, Lkotlin/coroutines/jvm/internal/SpillingKt;.nullOutSpilledVariable:(Ljava/lang/Object;)Ljava/lang/Object; // method@0290
+07b9: move-result-object v11
+07ba: iput-object v11, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$10:Ljava/lang/Object; // field@00a0
+07bc: invoke-static/range {v34}, Lkotlin/coroutines/jvm/internal/SpillingKt;.nullOutSpilledVariable:(Ljava/lang/Object;)Ljava/lang/Object; // method@0290
+07bf: move-result-object v11
+07c0: iput-object v11, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$11:Ljava/lang/Object; // field@00a1
+07c2: invoke-static/range {v33}, Lkotlin/coroutines/jvm/internal/SpillingKt;.nullOutSpilledVariable:(Ljava/lang/Object;)Ljava/lang/Object; // method@0290
+07c5: move-result-object v11
+07c6: iput-object v11, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$12:Ljava/lang/Object; // field@00a2
+07c8: invoke-static/range {v42}, Lkotlin/coroutines/jvm/internal/SpillingKt;.nullOutSpilledVariable:(Ljava/lang/Object;)Ljava/lang/Object; // method@0290
+07cb: move-result-object v11
+07cc: iput-object v11, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$13:Ljava/lang/Object; // field@00a3
+07ce: invoke-static/range {v18}, Lkotlin/coroutines/jvm/internal/SpillingKt;.nullOutSpilledVariable:(Ljava/lang/Object;)Ljava/lang/Object; // method@0290
+07d1: move-result-object v11
+07d2: iput-object v11, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$14:Ljava/lang/Object; // field@00a4
+07d4: invoke-static/range {v30}, Lkotlin/coroutines/jvm/internal/SpillingKt;.nullOutSpilledVariable:(Ljava/lang/Object;)Ljava/lang/Object; // method@0290
+07d7: move-result-object v11
+07d8: iput-object v11, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$15:Ljava/lang/Object; // field@00a5
+07da: invoke-static/range {v28}, Lkotlin/coroutines/jvm/internal/SpillingKt;.nullOutSpilledVariable:(Ljava/lang/Object;)Ljava/lang/Object; // method@0290
+07dd: move-result-object v11
+07de: iput-object v11, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$16:Ljava/lang/Object; // field@00a6
+07e0: invoke-static/range {v22}, Lkotlin/coroutines/jvm/internal/SpillingKt;.nullOutSpilledVariable:(Ljava/lang/Object;)Ljava/lang/Object; // method@0290
+07e3: move-result-object v11
+07e4: iput-object v11, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$17:Ljava/lang/Object; // field@00a7
+07e6: iput-object v9, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$18:Ljava/lang/Object; // field@00a8
+07e8: iput-object v10, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$19:Ljava/lang/Object; // field@00a9
+07ea: iput-object v6, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$20:Ljava/lang/Object; // field@00ab
+07ec: iput-object v8, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$21:Ljava/lang/Object; // field@00ac
+07ee: iput-object v12, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$22:Ljava/lang/Object; // field@00ad
+07f0: move-object/from16 v11, v19
+07f2: iput-object v11, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.L$23:Ljava/lang/Object; // field@00ae
+07f4: iput v2, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.I$0:I // field@0099
+07f6: iput v3, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.I$1:I // field@009a
+07f8: iput v13, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.I$2:I // field@009b
+07fa: move/from16 v19, v2
+07fc: move/from16 v57, v3
+07fe: move-wide/from16 v2, v47
+0800: iput-wide v2, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.J$0:J // field@009c
+0802: move-wide/from16 v47, v2
+0804: move-wide/from16 v2, v45
+0806: iput-wide v2, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.J$1:J // field@009d
+0808: move-wide/from16 v45, v2
+080a: const/4 v2, #int 3 // #3
+080b: iput v2, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.label:I // field@00b6
+080d: invoke-interface {v5, v14, v15}, Lcom/example/data/api/RuijieApiService;.getAccountInfo:(Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object; // method@0066
+0810: move-result-object v2
+0811: move-object/from16 v3, v26
+0813: if-ne v2, v3, 0816 // +0003
+0815: return-object v3
+0816: move-object/from16 v3, v22
+0818: move-object/from16 v22, v12
+081a: move-object/from16 v12, v28
+081c: move-object/from16 v28, v3
+081e: move-object/from16 v3, v18
+0820: move/from16 v18, v13
+0822: move-object v13, v3
+0823: move-object v14, v4
+0824: move-object v3, v6
+0825: move-object/from16 v26, v10
+0827: move-object/from16 v32, v42
+0829: move/from16 v6, v57
+082b: move-object/from16 v42, v5
+082d: move-wide/from16 v4, v45
+082f: move-object/from16 v45, v23
+0831: move-object/from16 v23, v8
+0833: move-object v8, v9
+0834: move-wide/from16 v9, v47
+0836: check-cast v2, Lretrofit2/Response; // type@00df
+0838: invoke-virtual {v2}, Lretrofit2/Response;.code:()I // method@02d0
+083b: move-result v15
+083c: move-object/from16 v46, v2
+083e: invoke-virtual/range {v46}, Lretrofit2/Response;.headers:()Lokhttp3/Headers; // method@02d2
+0841: move-result-object v2
+0842: move-object/from16 v47, v3
+0844: move-object/from16 v3, v52
+0846: invoke-virtual {v2, v3}, Lokhttp3/Headers;.get:(Ljava/lang/String;)Ljava/lang/String; // method@02b3
+0849: move-result-object v2
+084a: if-nez v2, 084e // +0004
+084c: move-object/from16 v2, v29
+084e: invoke-virtual/range {v46}, Lretrofit2/Response;.body:()Ljava/lang/Object; // method@02cf
+0851: move-result-object v3
+0852: check-cast v3, Lokhttp3/ResponseBody; // type@00dc
+0854: if-eqz v3, 0870 // +001c
+0856: invoke-virtual {v3}, Lokhttp3/ResponseBody;.string:()Ljava/lang/String; // method@02b6
+0859: move-result-object v3
+085a: if-nez v3, 087d // +0023
+085c: goto 0870 // +0014
+085d: move-exception v0
+085e: move-object/from16 v27, v8
+0860: move-object/from16 v29, v12
+0862: move-object/from16 v31, v13
+0864: move-object/from16 v43, v14
+0866: move/from16 v13, v18
+0868: move/from16 v2, v19
+086a: move-object/from16 v25, v47
+086c: move-object/from16 v19, v11
+086e: goto/16 0b27 // +02b9
+0870: invoke-virtual/range {v46}, Lretrofit2/Response;.errorBody:()Lokhttp3/ResponseBody; // method@02d1
+0873: move-result-object v3
+0874: if-eqz v3, 087b // +0007
+0876: invoke-virtual {v3}, Lokhttp3/ResponseBody;.string:()Ljava/lang/String; // method@02b6
+0879: move-result-object v3
+087a: goto 087d // +0003
+087b: move-object/from16 v3, v29
+087d: move-wide/from16 v48, v4
+087f: sget-object v4, Lcom/example/data/repository/RuijieRepository;.Companion:Lcom/example/data/repository/RuijieRepository$Companion; // field@00b9
+0881: invoke-virtual {v4, v3}, Lcom/example/data/repository/RuijieRepository$Companion;.redactSensitive:(Ljava/lang/String;)Ljava/lang/String; // method@00d6
+0884: move-result-object v4
+0885: new-instance v5, Ljava/lang/StringBuilder; // type@009d
+0887: invoke-direct {v5}, Ljava/lang/StringBuilder;.<init>:()V // method@0255
+088a: move/from16 v50, v6
+088c: const-string v6, "<<< Stage 3 Account Info Response: HTTP " // string@0162
+088e: invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+0891: move-result-object v5
+0892: invoke-virtual {v5, v15}, Ljava/lang/StringBuilder;.append:(I)Ljava/lang/StringBuilder; // method@0256
+0895: move-result-object v5
+0896: move-object/from16 v6, v27
+0898: invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+089b: move-result-object v5
+089c: invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+089f: move-result-object v4
+08a0: invoke-virtual {v4}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@025a
+08a3: move-result-object v4
+08a4: invoke-static {v7, v4}, Landroid/util/Log;.d:(Ljava/lang/String;Ljava/lang/String;)I // method@0004
+08a7: iget-object v4, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.this$0:Lcom/example/data/repository/RuijieRepository; // field@00b7
+08a9: nop // spacer
+08aa: nop // spacer
+08ab: nop // spacer
+08ac: new-instance v5, Ljava/lang/StringBuilder; // type@009d
+08ae: invoke-direct {v5}, Ljava/lang/StringBuilder;.<init>:()V // method@0255
+08b1: invoke-virtual {v5, v14}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+08b4: move-result-object v5
+08b5: const-string v6, "/service/api/org/account/info" // string@0157
+08b7: invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+08ba: move-result-object v5
+08bb: invoke-virtual {v5}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@025a
+08be: move-result-object v5
+08bf: invoke-static {v4, v3, v15, v2, v5}, Lcom/example/data/repository/RuijieRepository;.access$parseJsonObjectSafely:(Lcom/example/data/repository/RuijieRepository;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;)Lkotlin/Pair; // method@0107
+08c2: move-result-object v4
+08c3: invoke-virtual {v4}, Lkotlin/Pair;.component1:()Ljava/lang/Object; // method@0273
+08c6: move-result-object v4
+08c7: check-cast v4, Lorg/json/JSONObject; // type@00de
+08c9: if-eqz v4, 09b8 // +00ef
+08cb: move-object/from16 v5, v31
+08cd: invoke-virtual {v4, v5}, Lorg/json/JSONObject;.optJSONObject:(Ljava/lang/String;)Lorg/json/JSONObject; // method@02c5
+08d0: move-result-object v5
+08d1: if-nez v5, 08d4 // +0003
+08d3: move-object v5, v4
+08d4: const-string v6, "email" // string@04cd
+08d6: move-object/from16 v27, v2
+08d8: const-string v2, "mail" // string@05ec
+08da: move-object/from16 v31, v3
+08dc: move-object/from16 v3, v29
+08de: invoke-virtual {v5, v2, v3}, Lorg/json/JSONObject;.optString:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; // method@02c9
+08e1: move-result-object v2
+08e2: invoke-virtual {v5, v6, v2}, Lorg/json/JSONObject;.optString:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; // method@02c9
+08e5: move-result-object v2
+08e6: move-object/from16 v6, v20
+08e8: invoke-static {v2, v6}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V // method@0297
+08eb: move-object/from16 v23, v2
+08ed: const-string v2, "role" // string@067f
+08ef: move-object/from16 v20, v4
+08f1: const-string v4, "userRole" // string@0715
+08f3: invoke-virtual {v5, v4, v3}, Lorg/json/JSONObject;.optString:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; // method@02c9
+08f6: move-result-object v4
+08f7: invoke-virtual {v5, v2, v4}, Lorg/json/JSONObject;.optString:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; // method@02c9
+08fa: move-result-object v2
+08fb: invoke-static {v2, v6}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V // method@0297
+08fe: move-object/from16 v22, v2
+0900: const-string v2, "nickname" // string@0603
+0902: const-string v4, "nickName" // string@0602
+0904: move-object/from16 v29, v8
+0906: move-object/from16 v8, v43
+0908: invoke-virtual {v5, v8, v3}, Lorg/json/JSONObject;.optString:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; // method@02c9
+090b: move-result-object v8
+090c: invoke-virtual {v5, v4, v8}, Lorg/json/JSONObject;.optString:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; // method@02c9
+090f: move-result-object v4
+0910: invoke-virtual {v5, v2, v4}, Lorg/json/JSONObject;.optString:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; // method@02c9
+0913: move-result-object v2
+0914: invoke-static {v2, v6}, Lkotlin/jvm/internal/Intrinsics;.checkNotNullExpressionValue:(Ljava/lang/Object;Ljava/lang/String;)V // method@0297
+0917: invoke-static/range {v47}, Lkotlin/jvm/internal/Intrinsics;.checkNotNull:(Ljava/lang/Object;)V // method@0295
+091a: move-object/from16 v4, v47
+091c: check-cast v4, Ljava/lang/CharSequence; // type@0090
+091e: invoke-static {v4}, Lkotlin/text/StringsKt;.isBlank:(Ljava/lang/CharSequence;)Z // method@02a3
+0921: move-result v4
+0922: if-eqz v4, 0933 // +0011
+0924: move-object/from16 v8, v21
+0926: invoke-virtual {v5, v8, v3}, Lorg/json/JSONObject;.optString:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; // method@02c9
+0929: move-result-object v3
+092a: move-object/from16 v4, v25
+092c: invoke-virtual {v5, v4, v3}, Lorg/json/JSONObject;.optString:(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String; // method@02c9
+092f: move-result-object v3
+0930: move-object/from16 v25, v3
+0932: goto 0935 // +0003
+0933: move-object/from16 v25, v47
+0935: cmp-long v3, v48, v16
+0937: if-nez v3, 0972 // +003b
+0939: move-wide/from16 v3, v16
+093b: invoke-virtual {v5, v0, v3, v4}, Lorg/json/JSONObject;.optLong:(Ljava/lang/String;J)J // method@02c7
+093e: move-result-wide v3
+093f: move-object/from16 v0, v24
+0941: invoke-virtual {v5, v0, v3, v4}, Lorg/json/JSONObject;.optLong:(Ljava/lang/String;J)J // method@02c7
+0944: move-result-wide v3
+0945: move-object/from16 v57, v2
+0947: move-wide/from16 v54, v3
+0949: move-object/from16 v56, v22
+094b: move-object/from16 v52, v23
+094d: move-object/from16 v53, v25
+094f: move-object/from16 v49, v26
+0951: move-object/from16 v48, v29
+0953: move-object/from16 v47, v45
+0955: move/from16 v6, v50
+0957: move-wide/from16 v50, v9
+0959: move-object v9, v14
+095a: goto/16 0b5d // +0203
+095c: move-exception v0
+095d: move/from16 v4, v19
+095f: move-object/from16 v19, v2
+0961: move v2, v4
+0962: move-object/from16 v31, v13
+0964: move-object/from16 v43, v14
+0966: move/from16 v13, v18
+0968: move-object/from16 v27, v29
+096a: move-wide/from16 v4, v48
+096c: move/from16 v6, v50
+096e: move-object/from16 v29, v12
+0970: goto/16 0b27 // +01b7
+0972: move-object/from16 v57, v2
+0974: move-object/from16 v56, v22
+0976: move-object/from16 v52, v23
+0978: move-object/from16 v53, v25
+097a: move-object/from16 v47, v45
+097c: move-wide/from16 v54, v48
+097e: move/from16 v6, v50
+0980: move-wide/from16 v50, v9
+0982: move-object v9, v14
+0983: move-object/from16 v49, v26
+0985: move-object/from16 v48, v29
+0987: goto/16 0b5d // +01d6
+0989: move-exception v0
+098a: move/from16 v4, v19
+098c: move-object/from16 v19, v2
+098e: move v2, v4
+098f: move-object/from16 v31, v13
+0991: move-object/from16 v43, v14
+0993: move/from16 v13, v18
+0995: move-object/from16 v27, v29
+0997: move-object/from16 v25, v47
+0999: move-wide/from16 v4, v48
+099b: move/from16 v6, v50
+099d: move-object/from16 v29, v12
+099f: goto/16 0b27 // +0188
+09a1: move-exception v0
+09a2: move-object/from16 v31, v13
+09a4: move-object/from16 v43, v14
+09a6: move/from16 v13, v18
+09a8: move/from16 v2, v19
+09aa: move-object/from16 v27, v29
+09ac: move-object/from16 v25, v47
+09ae: move-wide/from16 v4, v48
+09b0: move/from16 v6, v50
+09b2: move-object/from16 v19, v11
+09b4: move-object/from16 v29, v12
+09b6: goto/16 0b27 // +0171
+09b8: move-object/from16 v27, v2
+09ba: move-object/from16 v31, v3
+09bc: move-object/from16 v20, v4
+09be: move-object/from16 v29, v8
+09c0: move-object/from16 v57, v11
+09c2: move-object/from16 v56, v22
+09c4: move-object/from16 v52, v23
+09c6: move-object/from16 v53, v47
+09c8: move-wide/from16 v54, v48
+09ca: move/from16 v6, v50
+09cc: move-wide/from16 v50, v9
+09ce: move-object v9, v14
+09cf: move-object/from16 v49, v26
+09d1: move-object/from16 v48, v29
+09d3: move-object/from16 v47, v45
+09d5: goto/16 0b5d // +0188
+09d7: move-exception v0
+09d8: move-object/from16 v29, v8
+09da: move-object/from16 v31, v13
+09dc: move-object/from16 v43, v14
+09de: move/from16 v13, v18
+09e0: move/from16 v2, v19
+09e2: move-object/from16 v27, v29
+09e4: move-object/from16 v25, v47
+09e6: move-wide/from16 v4, v48
+09e8: move/from16 v6, v50
+09ea: move-object/from16 v19, v11
+09ec: move-object/from16 v29, v12
+09ee: goto/16 0b27 // +0139
+09f0: move-exception v0
+09f1: move/from16 v50, v6
+09f3: move-object/from16 v29, v8
+09f5: move-object/from16 v31, v13
+09f7: move-object/from16 v43, v14
+09f9: move/from16 v13, v18
+09fb: move/from16 v2, v19
+09fd: move-object/from16 v27, v29
+09ff: move-object/from16 v25, v47
+0a01: move-wide/from16 v4, v48
+0a03: move-object/from16 v19, v11
+0a05: move-object/from16 v29, v12
+0a07: goto/16 0b27 // +0120
+0a09: move-exception v0
+0a0a: move-wide/from16 v48, v4
+0a0c: move/from16 v50, v6
+0a0e: move-object/from16 v29, v8
+0a10: move-object/from16 v31, v13
+0a12: move-object/from16 v43, v14
+0a14: move/from16 v13, v18
+0a16: move/from16 v2, v19
+0a18: move-object/from16 v27, v29
+0a1a: move-object/from16 v25, v47
+0a1c: move-object/from16 v19, v11
+0a1e: move-object/from16 v29, v12
+0a20: goto/16 0b27 // +0107
+0a22: move-exception v0
+0a23: move-object/from16 v47, v3
+0a25: move-wide/from16 v48, v4
+0a27: move/from16 v50, v6
+0a29: move-object/from16 v29, v8
+0a2b: move-object/from16 v31, v13
+0a2d: move-object/from16 v43, v14
+0a2f: move/from16 v13, v18
+0a31: move/from16 v2, v19
+0a33: move-object/from16 v27, v29
+0a35: move-object/from16 v25, v47
+0a37: move-object/from16 v19, v11
+0a39: move-object/from16 v29, v12
+0a3b: goto/16 0b27 // +00ec
+0a3d: move-exception v0
+0a3e: move-object/from16 v43, v4
+0a40: move-object/from16 v25, v6
+0a42: move-object/from16 v27, v9
+0a44: move-object/from16 v26, v10
+0a46: move-object/from16 v31, v18
+0a48: move/from16 v2, v19
+0a4a: move-object/from16 v29, v28
+0a4c: move-object/from16 v32, v42
+0a4e: move-wide/from16 v9, v47
+0a50: move/from16 v6, v57
+0a52: move-object/from16 v42, v5
+0a54: move-object/from16 v19, v11
+0a56: move-object/from16 v28, v22
+0a58: move-wide/from16 v4, v45
+0a5a: move-object/from16 v22, v12
+0a5c: move-object/from16 v45, v23
+0a5e: move-object/from16 v23, v8
+0a60: goto/16 0b27 // +00c7
+0a62: move-exception v0
+0a63: move-wide/from16 v45, v2
+0a65: move-object/from16 v43, v4
+0a67: move-object/from16 v25, v6
+0a69: move-object/from16 v27, v9
+0a6b: move-object/from16 v26, v10
+0a6d: move-object/from16 v31, v18
+0a6f: move/from16 v2, v19
+0a71: move-object/from16 v29, v28
+0a73: move-object/from16 v32, v42
+0a75: move-wide/from16 v9, v47
+0a77: move/from16 v6, v57
+0a79: move-object/from16 v42, v5
+0a7b: move-object/from16 v19, v11
+0a7d: move-object/from16 v28, v22
+0a7f: move-wide/from16 v4, v45
+0a81: move-object/from16 v22, v12
+0a83: move-object/from16 v45, v23
+0a85: move-object/from16 v23, v8
+0a87: goto/16 0b27 // +00a0
+0a89: move-exception v0
+0a8a: move-wide/from16 v47, v2
+0a8c: move-object/from16 v43, v4
+0a8e: move-object/from16 v25, v6
+0a90: move-object/from16 v27, v9
+0a92: move-object/from16 v26, v10
+0a94: move-object/from16 v31, v18
+0a96: move/from16 v2, v19
+0a98: move-object/from16 v29, v28
+0a9a: move-object/from16 v32, v42
+0a9c: move-wide/from16 v9, v47
+0a9e: move/from16 v6, v57
+0aa0: move-object/from16 v42, v5
+0aa2: move-object/from16 v19, v11
+0aa4: move-object/from16 v28, v22
+0aa6: move-wide/from16 v4, v45
+0aa8: move-object/from16 v22, v12
+0aaa: move-object/from16 v45, v23
+0aac: move-object/from16 v23, v8
+0aae: goto/16 0b27 // +0079
+0ab0: move-exception v0
+0ab1: move/from16 v19, v2
+0ab3: move/from16 v57, v3
+0ab5: move-object/from16 v43, v4
+0ab7: move-object/from16 v25, v6
+0ab9: move-object/from16 v27, v9
+0abb: move-object/from16 v26, v10
+0abd: move-object/from16 v31, v18
+0abf: move-object/from16 v29, v28
+0ac1: move-object/from16 v32, v42
+0ac3: move-wide/from16 v9, v47
+0ac5: move/from16 v6, v57
+0ac7: move-object/from16 v42, v5
+0ac9: move-object/from16 v19, v11
+0acb: move-object/from16 v28, v22
+0acd: move-wide/from16 v4, v45
+0acf: move-object/from16 v22, v12
+0ad1: move-object/from16 v45, v23
+0ad3: move-object/from16 v23, v8
+0ad5: goto 0b27 // +0052
+0ad6: move-exception v0
+0ad7: move/from16 v57, v3
+0ad9: move-object/from16 v11, v19
+0adb: move/from16 v19, v2
+0add: move-object/from16 v43, v4
+0adf: move-object/from16 v25, v6
+0ae1: move-object/from16 v27, v9
+0ae3: move-object/from16 v26, v10
+0ae5: move-object/from16 v31, v18
+0ae7: move-object/from16 v29, v28
+0ae9: move-object/from16 v32, v42
+0aeb: move-wide/from16 v9, v47
+0aed: move/from16 v6, v57
+0aef: move-object/from16 v42, v5
+0af1: move-object/from16 v19, v11
+0af3: move-object/from16 v28, v22
+0af5: move-wide/from16 v4, v45
+0af7: move-object/from16 v22, v12
+0af9: move-object/from16 v45, v23
+0afb: move-object/from16 v23, v8
+0afd: goto 0b27 // +002a
+0afe: move-exception v0
+0aff: move/from16 v57, v3
+0b01: move-object/from16 v23, v11
+0b03: move-object/from16 v11, v19
+0b05: move/from16 v19, v2
+0b07: move-object/from16 v43, v4
+0b09: move-object/from16 v25, v6
+0b0b: move-object/from16 v27, v9
+0b0d: move-object/from16 v26, v10
+0b0f: move-object/from16 v31, v18
+0b11: move-object/from16 v29, v28
+0b13: move-object/from16 v32, v42
+0b15: move-wide/from16 v9, v47
+0b17: move/from16 v6, v57
+0b19: move-object/from16 v42, v5
+0b1b: move-object/from16 v19, v11
+0b1d: move-object/from16 v28, v22
+0b1f: move-wide/from16 v4, v45
+0b21: move-object/from16 v22, v12
+0b23: move-object/from16 v45, v23
+0b25: move-object/from16 v23, v8
+0b27: invoke-virtual {v0}, Ljava/lang/Exception;.getMessage:()Ljava/lang/String; // method@0244
+0b2a: move-result-object v3
+0b2b: new-instance v8, Ljava/lang/StringBuilder; // type@009d
+0b2d: invoke-direct {v8}, Ljava/lang/StringBuilder;.<init>:()V // method@0255
+0b30: const-string v11, "Optional Account Info retrieval failed: " // string@0327
+0b32: invoke-virtual {v8, v11}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+0b35: move-result-object v8
+0b36: invoke-virtual {v8, v3}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+0b39: move-result-object v3
+0b3a: invoke-virtual {v3}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@025a
+0b3d: move-result-object v3
+0b3e: invoke-static {v7, v3}, Landroid/util/Log;.w:(Ljava/lang/String;Ljava/lang/String;)I // method@0007
+0b41: move-wide/from16 v54, v4
+0b43: move-wide/from16 v50, v9
+0b45: move/from16 v18, v13
+0b47: move-object/from16 v57, v19
+0b49: move-object/from16 v56, v22
+0b4b: move-object/from16 v52, v23
+0b4d: move-object/from16 v53, v25
+0b4f: move-object/from16 v49, v26
+0b51: move-object/from16 v48, v27
+0b53: move-object/from16 v12, v29
+0b55: move-object/from16 v13, v31
+0b57: move-object/from16 v9, v43
+0b59: move-object/from16 v47, v45
+0b5b: move/from16 v19, v2
+0b5d: iget-object v0, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.this$0:Lcom/example/data/repository/RuijieRepository; // field@00b7
+0b5f: invoke-static {v0}, Lcom/example/data/repository/RuijieRepository;.access$getAccountManager$p:(Lcom/example/data/repository/RuijieRepository;)Lcom/example/data/session/AccountManager; // method@0101
+0b62: move-result-object v46
+0b63: nop // spacer
+0b64: invoke-static/range {v48}, Lkotlin/jvm/internal/Intrinsics;.checkNotNull:(Ljava/lang/Object;)V // method@0295
+0b67: invoke-static/range {v49}, Lkotlin/jvm/internal/Intrinsics;.checkNotNull:(Ljava/lang/Object;)V // method@0295
+0b6a: nop // spacer
+0b6b: nop // spacer
+0b6c: invoke-static/range {v53}, Lkotlin/jvm/internal/Intrinsics;.checkNotNull:(Ljava/lang/Object;)V // method@0295
+0b6f: nop // spacer
+0b70: nop // spacer
+0b71: nop // spacer
+0b72: iget-object v0, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.$server:Lcom/example/data/model/RuijieServer; // field@0097
+0b74: iget-object v2, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.$customUrl:Ljava/lang/String; // field@0095
+0b76: move-object/from16 v58, v0
+0b78: move-object/from16 v59, v2
+0b7a: invoke-virtual/range {v46, v47, v48, v49, v50, v51, v52, v53, v54, v55, v56, v57, v58, v59}, Lcom/example/data/session/AccountManager;.setSession:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLjava/lang/String;Ljava/lang/String;JLjava/lang/String;Ljava/lang/String;Lcom/example/data/model/RuijieServer;Ljava/lang/String;)V // method@0124
+0b7d: move-object/from16 v2, v47
+0b7f: iget-object v0, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.$server:Lcom/example/data/model/RuijieServer; // field@0097
+0b81: invoke-virtual {v0}, Lcom/example/data/model/RuijieServer;.getDisplayName:()Ljava/lang/String; // method@009b
+0b84: move-result-object v0
+0b85: new-instance v3, Ljava/lang/StringBuilder; // type@009d
+0b87: invoke-direct {v3}, Ljava/lang/StringBuilder;.<init>:()V // method@0255
+0b8a: const-string v4, "Ruijie Login Successful! User: " // string@034a
+0b8c: invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+0b8f: move-result-object v3
+0b90: invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+0b93: move-result-object v3
+0b94: const-string v4, ", Server: " // string@0142
+0b96: invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+0b99: move-result-object v3
+0b9a: invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+0b9d: move-result-object v0
+0b9e: invoke-virtual {v0}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@025a
+0ba1: move-result-object v0
+0ba2: invoke-static {v7, v0}, Landroid/util/Log;.d:(Ljava/lang/String;Ljava/lang/String;)I // method@0004
+0ba5: new-instance v0, Lcom/example/data/repository/ApiResult$Success; // type@0056
+0ba7: iget-object v3, v1, Lcom/example/data/repository/RuijieRepository$loginWithCredentials$2;.this$0:Lcom/example/data/repository/RuijieRepository; // field@00b7
+0ba9: invoke-static {v3}, Lcom/example/data/repository/RuijieRepository;.access$getAccountManager$p:(Lcom/example/data/repository/RuijieRepository;)Lcom/example/data/session/AccountManager; // method@0101
+0bac: move-result-object v3
+0bad: invoke-virtual {v3}, Lcom/example/data/session/AccountManager;.getActiveAccount:()Lcom/example/data/model/RuijieAccount; // method@0121
+0bb0: move-result-object v3
+0bb1: invoke-direct {v0, v3}, Lcom/example/data/repository/ApiResult$Success;.<init>:(Ljava/lang/Object;)V // method@00ba
+0bb4: return-object v0
+0bb5: move-exception v0
+0bb6: move-object v4, v9
+0bb7: move-object/from16 v5, v42
+0bb9: move-object v9, v2
+0bba: goto 0bd5 // +001b
+0bbb: move-exception v0
+0bbc: move-object/from16 v2, v47
+0bbe: move-object v4, v9
+0bbf: move-object/from16 v5, v42
+0bc1: move-object v9, v2
+0bc2: goto 0bd5 // +0013
+0bc3: move-exception v0
+0bc4: move-object/from16 v5, v42
+0bc6: move-object/from16 v4, v43
+0bc8: move-object/from16 v9, v45
+0bca: goto 0bd5 // +000b
+0bcb: move-exception v0
+0bcc: move-object/from16 v23, v11
+0bce: move-object/from16 v9, v23
+0bd0: goto 0bd5 // +0005
+0bd1: move-exception v0
+0bd2: move-object v9, v11
+0bd3: move-object/from16 v44, v12
+0bd5: invoke-virtual {v0}, Ljava/lang/Exception;.getLocalizedMessage:()Ljava/lang/String; // method@0243
+0bd8: move-result-object v2
+0bd9: new-instance v3, Ljava/lang/StringBuilder; // type@009d
+0bdb: invoke-direct {v3}, Ljava/lang/StringBuilder;.<init>:()V // method@0255
+0bde: const-string v6, "Ruijie Login network error: " // string@034b
+0be0: invoke-virtual {v3, v6}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+0be3: move-result-object v3
+0be4: invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+0be7: move-result-object v2
+0be8: invoke-virtual {v2}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@025a
+0beb: move-result-object v2
+0bec: move-object v3, v0
+0bed: check-cast v3, Ljava/lang/Throwable; // type@009f
+0bef: invoke-static {v7, v2, v3}, Landroid/util/Log;.e:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I // method@0006
+0bf2: new-instance v2, Lcom/example/data/repository/ApiResult$Error; // type@0055
+0bf4: invoke-virtual {v0}, Ljava/lang/Exception;.getLocalizedMessage:()Ljava/lang/String; // method@0243
+0bf7: move-result-object v3
+0bf8: new-instance v6, Ljava/lang/StringBuilder; // type@009d
+0bfa: invoke-direct {v6}, Ljava/lang/StringBuilder;.<init>:()V // method@0255
+0bfd: const-string v7, "Connection error: " // string@019c
+0bff: invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+0c02: move-result-object v6
+0c03: invoke-virtual {v6, v3}, Ljava/lang/StringBuilder;.append:(Ljava/lang/String;)Ljava/lang/StringBuilder; // method@0259
+0c06: move-result-object v3
+0c07: invoke-virtual {v3}, Ljava/lang/StringBuilder;.toString:()Ljava/lang/String; // method@025a
+0c0a: move-result-object v3
+0c0b: move-object v6, v0
+0c0c: check-cast v6, Ljava/lang/Throwable; // type@009f
+0c0e: invoke-direct {v2, v3, v6}, Lcom/example/data/repository/ApiResult$Error;.<init>:(Ljava/lang/String;Ljava/lang/Throwable;)V // method@00ae
+0c11: return-object v2
+0c12: new-instance v0, Lcom/example/data/repository/ApiResult$Error; // type@0055
+0c14: const-string v2, "Username and password are required." // string@0376
+0c16: const/4 v13, #int 0 // #0
+0c17: const/4 v15, #int 2 // #2
+0c18: invoke-direct {v0, v2, v13, v15, v13}, Lcom/example/data/repository/ApiResult$Error;.<init>:(Ljava/lang/String;Ljava/lang/Throwable;ILkotlin/jvm/internal/DefaultConstructorMarker;)V // method@00af
+0c1b: return-object v0
+0c1c: packed-switch-data (12 units)
